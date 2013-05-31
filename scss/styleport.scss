@@ -1,0 +1,199 @@
+﻿/* Overall CSS Attributes */
+	
+	/* See cleanhouse */
+	@import "cleanhouse";
+	
+
+/* 	-------------------
+	THEME SETTINGS 
+	-------------------
+*/
+	
+	/* Colors */
+		$gray: #656565;			/* rgba(101, 101, 101, 0); */
+		$black: #333;			/* rgba (51, 51, 51, 0); */
+		$blue: #42c0cf;			/* rgba (66, 192, 207, 0); */
+		$darkblue: #25a4b3;		/* rgba (37, 164, 2179, 0); */
+		$white: white; 			/* rgba(255, 255, 255, 0); */
+
+		
+	/* Variables */
+		
+		$grayBlock:	solid $gray 75px;
+		
+			
+/* 	-------------------
+	MAIN SETTINGS 
+	-------------------
+*/
+
+	/* Overall Settings */
+
+		html
+			{font-family: Verdana, sans-serif;
+			color: $gray;
+			text-align: left;
+			background-color: white;
+			}
+
+		h1, h2, h3, h4, h5, h6 {
+			text-transform: uppercase;
+			font-weight: bold;}
+		
+		a {
+			text-decoration: none;
+			color: $darkblue;
+			}
+		
+		h1 > a {
+			color: inherit;
+			}
+			
+		nav a {
+			text-decoration: none;
+			font-weight: bold;
+			}	
+		
+		.mainHeader nav a{
+			color: $gray;
+			
+			&:hover {
+				color: $white;
+				transition: color 1s ease-in;
+				@include transition(color 1s ease-in);
+				}		
+			}
+			
+		.mainFooter nav a {
+			color: $white;
+			
+			&:hover {
+				color: $darkblue;
+				transition: color 1s ease-in;
+				@include transition(color 1s ease-in);
+				}		
+			}
+			
+		ul
+			{list-style: none;
+			}
+			
+		body {
+			position: relative;
+			min-width: 400px;
+			}
+
+/* 	-------------------
+	SPECIFIC SETTINGS 
+	-------------------
+*/
+
+	/* 	----------------------
+		MAIN HEADER AND FOOTER
+		----------------------
+	*/
+
+		/* Main Header and Footer*/
+			body > header, footer {
+				background-color: $blue;
+				color: $white;
+				text-align: center;
+				h1, h2, h3, h4, h5, h6 {
+					color: inherit;
+					}
+				ul li {display: inline;
+					}
+				padding: 2% 0;
+				}
+					
+			h1.mainHeader {
+				text-transform: uppercase;
+				font-size: 150%;
+				}
+			
+			footer {
+				margin: 0;
+				padding: 0;
+				}
+			
+		/* Navigation */
+		
+			nav {
+				margin: 0;
+				padding: 0 .5em;
+				ul li {
+						margin: 0;
+						padding: .5em;
+						}
+				text-align: center;
+				}
+		
+			nav.mainFooter {
+				color: $blue;
+				}
+		
+
+	/* 	----------------------
+		SECTIONS
+		----------------------
+	*/
+	
+		/* Overall Section Settings */
+
+			/* Sections */
+			
+			section {
+			border-bottom: $grayBlock;
+			padding: 5% 5%;
+			margin: 0;
+				
+				h1 {
+				color: $darkblue;
+				font-size: 2rem;
+				}
+				
+				dt {
+				color: $blue;
+				font-weight: bold;
+				font-size: 1.5rem;
+				}
+			}
+			
+			/* Contact Section */
+			
+			.contact, h1.contact {
+			background-color: $blue;
+			color: $white;
+			border-bottom: none;
+			}
+						
+			/* Main Footer */
+			
+			footer.mainFooter {
+			background: $gray;
+			margin: 0;
+			padding: 0;
+			color: $white;
+			text-align: center;
+			}
+	
+		
+			/* Tagline */
+		
+			.tagline {
+			color: $blue;
+			font-size: 1.5em;
+			text-align: center;
+			}
+					
+					
+			/* Icons */
+			
+			ul.icons li
+			{display: inline;
+				img {
+				height: 3em;
+				iwidth: 3em;
+				}
+			}
+			

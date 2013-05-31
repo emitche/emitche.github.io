@@ -1,0 +1,263 @@
+/* Overall CSS Attributes */
+/* See cleanhouse */
+/* Settings to make the CSS/SCSS easier to build. */
+/*  ------------------
+	Border-Box
+	------------------ */
+/*  http://compass-style.org/examples/compass/css3/box_sizing/ */
+/* line 11, ../sass/cleanhouse.scss */
+.content-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 14, ../sass/cleanhouse.scss */
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*	------------------
+	Transitions
+	------------------ */
+/*	------------------
+	Font-Size
+	------------------ */
+/* 	------------------
+	Micro clearfix
+	------------------ */
+/**
+	 * For modern browsers
+	 * 1. The space content is one way to avoid an Opera bug when the
+	 *    contenteditable attribute is included anywhere else in the document.
+	 *    Otherwise it causes space to appear at the top and bottom of elements
+	 *    that are clearfixed.
+	 * 2. The use of `table` rather than `block` is only necessary if using
+	 *    `:before` to contain the top-margins of child elements.
+	 */
+/* line 49, ../sass/cleanhouse.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 54, ../sass/cleanhouse.scss */
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 63, ../sass/cleanhouse.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* 	-------------------
+	THEME SETTINGS 
+	-------------------
+*/
+/* Colors */
+/* rgba(101, 101, 101, 0); */
+/* rgba (51, 51, 51, 0); */
+/* rgba (66, 192, 207, 0); */
+/* rgba (37, 164, 2179, 0); */
+/* rgba(255, 255, 255, 0); */
+/* Variables */
+/* 	-------------------
+	MAIN SETTINGS 
+	-------------------
+*/
+/* Overall Settings */
+/* line 33, ../sass/styleport.scss */
+html {
+  font-family: Verdana, sans-serif;
+  color: #656565;
+  text-align: left;
+  background-color: white;
+}
+
+/* line 39, ../sass/styleport.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 43, ../sass/styleport.scss */
+a {
+  text-decoration: none;
+  color: #25a4b3;
+}
+
+/* line 48, ../sass/styleport.scss */
+h1 > a {
+  color: inherit;
+}
+
+/* line 52, ../sass/styleport.scss */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 57, ../sass/styleport.scss */
+.mainHeader nav a {
+  color: #656565;
+}
+/* line 60, ../sass/styleport.scss */
+.mainHeader nav a:hover {
+  color: white;
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  -o-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+
+/* line 67, ../sass/styleport.scss */
+.mainFooter nav a {
+  color: white;
+}
+/* line 70, ../sass/styleport.scss */
+.mainFooter nav a:hover {
+  color: #25a4b3;
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  -o-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+
+/* line 78, ../sass/styleport.scss */
+ul {
+  list-style: none;
+}
+
+/* line 81, ../sass/styleport.scss */
+body {
+  position: relative;
+  min-width: 400px;
+}
+
+/* 	-------------------
+	SPECIFIC SETTINGS 
+	-------------------
+*/
+/* 	----------------------
+	MAIN HEADER AND FOOTER
+	----------------------
+*/
+/* Main Header and Footer*/
+/* line 97, ../sass/styleport.scss */
+body > header, footer {
+  background-color: #42c0cf;
+  color: white;
+  text-align: center;
+  padding: 2% 0;
+}
+/* line 101, ../sass/styleport.scss */
+body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: inherit;
+}
+/* line 104, ../sass/styleport.scss */
+body > header ul li, footer ul li {
+  display: inline;
+}
+
+/* line 109, ../sass/styleport.scss */
+h1.mainHeader {
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+/* line 114, ../sass/styleport.scss */
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+/* line 121, ../sass/styleport.scss */
+nav {
+  margin: 0;
+  padding: 0 .5em;
+  text-align: center;
+}
+/* line 124, ../sass/styleport.scss */
+nav ul li {
+  margin: 0;
+  padding: .5em;
+}
+
+/* line 131, ../sass/styleport.scss */
+nav.mainFooter {
+  color: #42c0cf;
+}
+
+/* 	----------------------
+	SECTIONS
+	----------------------
+*/
+/* Overall Section Settings */
+/* Sections */
+/* line 145, ../sass/styleport.scss */
+section {
+  border-bottom: solid #656565 75px;
+  padding: 5% 5%;
+  margin: 0;
+}
+/* line 150, ../sass/styleport.scss */
+section h1 {
+  color: #25a4b3;
+  font-size: 2rem;
+}
+/* line 155, ../sass/styleport.scss */
+section dt {
+  color: #42c0cf;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Contact Section */
+/* line 164, ../sass/styleport.scss */
+.contact, h1.contact {
+  background-color: #42c0cf;
+  color: white;
+  border-bottom: none;
+}
+
+/* Main Footer */
+/* line 172, ../sass/styleport.scss */
+footer.mainFooter {
+  background: #656565;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Tagline */
+/* line 183, ../sass/styleport.scss */
+.tagline {
+  color: #42c0cf;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Icons */
+/* line 193, ../sass/styleport.scss */
+ul.icons li {
+  display: inline;
+}
+/* line 194, ../sass/styleport.scss */
+ul.icons li img {
+  height: 3em;
+  iwidth: 3em;
+}
