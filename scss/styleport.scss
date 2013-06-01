@@ -19,18 +19,55 @@
 
 		
 	/* Variables */
-		
-		$grayBlock:	solid $gray 75px;
+		 
+		$grayBlock:	solid $gray 4.5em;	/* 72px */
 
 /* 	-------------------
 	GRID / SUSY SETTINGS
 	-------------------
-*/		
+*/	
+		$base-font-size: 16px;
+		
+		body {
+			position: relative;
+			min-width: 25em; 		/* 400px */
+			width: 100%;
+			}
 		
 	/* Establish number of columns. */		
-		/* $total columns */
-	
+		$media-layout: 1;
+		$media-layout: 47em 4;		/* 752px */
 		
+	/* Settings for breakpoints */
+		
+	/*		@include at-breakpoint(47em 4) {
+			
+			header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
+					width: 80%;
+					}
+					
+			section.what, section.about, aside.dev, section.contact {
+					width: 50%*(div.mainContent);
+					}
+			
+	*/
+	
+	/*
+		header.mainHeader, footer.mainFooter, p.tagline {
+					@include span-columns (4 omega, 6);
+						}
+			div.mainContent {
+				@include span-columns (4, 6);
+				}
+			section.what, section.about {
+					@include span-columns (2, 4);
+					}
+			aside.dev, section.contact {
+					@include span-columns (2 omega, 4);
+					}
+			}
+	*/
+
 /* 	-------------------
 	MAIN SETTINGS 
 	-------------------
@@ -85,11 +122,6 @@
 			
 		ul
 			{list-style: none;
-			}
-			
-		body {
-			position: relative;
-			min-width: 400px;
 			}
 
 /* 	-------------------
@@ -216,5 +248,4 @@
 				height: 3em;
 				iwidth: 3em;
 				}
-			}
-			
+			}	
