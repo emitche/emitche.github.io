@@ -1,7 +1,8 @@
 ﻿/* Overall CSS Attributes */
 	
 	/* See cleanhouse */
-	@import "cleanhouse";
+	@import 'cleanhouse';
+	@import 'susy';
 	
 
 /* 	-------------------
@@ -20,8 +21,16 @@
 	/* Variables */
 		
 		$grayBlock:	solid $gray 75px;
+
+/* 	-------------------
+	GRID / SUSY SETTINGS
+	-------------------
+*/		
 		
-			
+	/* Establish number of columns. */		
+		/* $total columns */
+	
+		
 /* 	-------------------
 	MAIN SETTINGS 
 	-------------------
@@ -161,7 +170,7 @@
 			
 			/* Contact Section */
 			
-			.contact, h1.contact {
+			.contact, h1.contact, aside.dev {
 			background-color: $blue;
 			color: $white;
 			border-bottom: none;
@@ -177,7 +186,19 @@
 			text-align: center;
 			}
 	
-		
+			/* Aside */
+			
+			aside.dev h1 {
+				color: $white;
+				font-size: 1.5em;
+				}
+			
+			aside.dev {
+				padding: 5%;
+				}
+				
+			
+				
 			/* Tagline */
 		
 			.tagline {
@@ -185,7 +206,7 @@
 			font-size: 1.5em;
 			text-align: center;
 			}
-					
+				
 					
 			/* Icons */
 			

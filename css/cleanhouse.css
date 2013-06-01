@@ -3,14 +3,14 @@
 	Border-Box
 	------------------ */
 /*  http://compass-style.org/examples/compass/css3/box_sizing/ */
-/* line 11, ../sass/cleanhouse.scss */
+/* line 11, ../scss/cleanhouse.scss */
 .content-box {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-/* line 14, ../sass/cleanhouse.scss */
+/* line 14, ../scss/cleanhouse.scss */
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -35,7 +35,7 @@
 	 * 2. The use of `table` rather than `block` is only necessary if using
 	 *    `:before` to contain the top-margins of child elements.
 	 */
-/* line 49, ../sass/cleanhouse.scss */
+/* line 49, ../scss/cleanhouse.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -44,7 +44,7 @@
   /* 2 */
 }
 
-/* line 54, ../sass/cleanhouse.scss */
+/* line 54, ../scss/cleanhouse.scss */
 .cf:after {
   clear: both;
 }
@@ -53,7 +53,7 @@
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 63, ../sass/cleanhouse.scss */
+/* line 63, ../scss/cleanhouse.scss */
 .cf {
   *zoom: 1;
 }

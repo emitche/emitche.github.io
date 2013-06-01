@@ -5,14 +5,14 @@
 	Border-Box
 	------------------ */
 /*  http://compass-style.org/examples/compass/css3/box_sizing/ */
-/* line 11, ../sass/cleanhouse.scss */
+/* line 11, ../scss/cleanhouse.scss */
 .content-box {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-/* line 14, ../sass/cleanhouse.scss */
+/* line 14, ../scss/cleanhouse.scss */
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -37,7 +37,7 @@
 	 * 2. The use of `table` rather than `block` is only necessary if using
 	 *    `:before` to contain the top-margins of child elements.
 	 */
-/* line 49, ../sass/cleanhouse.scss */
+/* line 49, ../scss/cleanhouse.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -46,7 +46,7 @@
   /* 2 */
 }
 
-/* line 54, ../sass/cleanhouse.scss */
+/* line 54, ../scss/cleanhouse.scss */
 .cf:after {
   clear: both;
 }
@@ -55,7 +55,7 @@
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 63, ../sass/cleanhouse.scss */
+/* line 63, ../scss/cleanhouse.scss */
 .cf {
   *zoom: 1;
 }
@@ -72,11 +72,17 @@
 /* rgba(255, 255, 255, 0); */
 /* Variables */
 /* 	-------------------
+	GRID / SUSY SETTINGS
+	-------------------
+*/
+/* Establish number of columns. */
+/* $total columns */
+/* 	-------------------
 	MAIN SETTINGS 
 	-------------------
 */
 /* Overall Settings */
-/* line 33, ../sass/styleport.scss */
+/* line 42, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -84,34 +90,34 @@ html {
   background-color: white;
 }
 
-/* line 39, ../sass/styleport.scss */
+/* line 48, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 43, ../sass/styleport.scss */
+/* line 52, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 48, ../sass/styleport.scss */
+/* line 57, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 52, ../sass/styleport.scss */
+/* line 61, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 57, ../sass/styleport.scss */
+/* line 66, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 60, ../sass/styleport.scss */
+/* line 69, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -121,11 +127,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 67, ../sass/styleport.scss */
+/* line 76, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 70, ../sass/styleport.scss */
+/* line 79, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -135,12 +141,12 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 78, ../sass/styleport.scss */
+/* line 87, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
 
-/* line 81, ../sass/styleport.scss */
+/* line 90, ../scss/styleport.scss */
 body {
   position: relative;
   min-width: 400px;
@@ -155,48 +161,48 @@ body {
 	----------------------
 */
 /* Main Header and Footer*/
-/* line 97, ../sass/styleport.scss */
+/* line 106, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 101, ../sass/styleport.scss */
+/* line 110, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 104, ../sass/styleport.scss */
+/* line 113, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 109, ../sass/styleport.scss */
+/* line 118, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 150%;
 }
 
-/* line 114, ../sass/styleport.scss */
+/* line 123, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 121, ../sass/styleport.scss */
+/* line 130, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0 .5em;
   text-align: center;
 }
-/* line 124, ../sass/styleport.scss */
+/* line 133, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 131, ../sass/styleport.scss */
+/* line 140, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -207,18 +213,18 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 145, ../sass/styleport.scss */
+/* line 154, ../scss/styleport.scss */
 section {
   border-bottom: solid #656565 75px;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 150, ../sass/styleport.scss */
+/* line 159, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 155, ../sass/styleport.scss */
+/* line 164, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -226,15 +232,15 @@ section dt {
 }
 
 /* Contact Section */
-/* line 164, ../sass/styleport.scss */
-.contact, h1.contact {
+/* line 173, ../scss/styleport.scss */
+.contact, h1.contact, aside.dev {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
 /* Main Footer */
-/* line 172, ../sass/styleport.scss */
+/* line 181, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   margin: 0;
@@ -243,8 +249,20 @@ footer.mainFooter {
   text-align: center;
 }
 
+/* Aside */
+/* line 191, ../scss/styleport.scss */
+aside.dev h1 {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 196, ../scss/styleport.scss */
+aside.dev {
+  padding: 5%;
+}
+
 /* Tagline */
-/* line 183, ../sass/styleport.scss */
+/* line 204, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   font-size: 1.5em;
@@ -252,11 +270,11 @@ footer.mainFooter {
 }
 
 /* Icons */
-/* line 193, ../sass/styleport.scss */
+/* line 214, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 194, ../sass/styleport.scss */
+/* line 215, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;
