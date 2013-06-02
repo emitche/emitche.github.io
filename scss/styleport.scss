@@ -21,83 +21,42 @@
 	/* Variables */
 		 
 		$grayBlock:	solid $gray 4.5em;	/* 72px */
-
-/* 	-------------------
-	GRID / SUSY SETTINGS
-	-------------------
-*/	
-		$base-font-size: 16px;
-		
-	/*	html {
-			background-color: $blue;
-			color: $blue;
-			}
-	*/
-			
-		/* Susy Container */
-		body {
-			position: relative;
-			min-width: 25em; 		/* 400px */
-			width: 100%;
-			}
-		
-	/* Establish number of columns. */		
 	
-	/*
-		$media-layout: 1;
-		$media-layout: 47em 2;		/* 752px */
-		
-		
-	/* Settings for breakpoints */
-	
-		@media (min-width:80em) {
-				body {
-					width: 80%;
-					left: 10%;
-					}
-				}
-		
-	/*		@include at-breakpoint(47em 4) {
-				body {
-					width = 80%;
-					left = 10%;
-					}
-				}
-	*/
-	
-	/*		@include at-breakpoint(47em 4) {
-			
-			header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
-					width: 100%;
-					}
-					
-			section.what, section.about, aside.dev, section.contact {
-					width: 50%*(div.mainContent);
-					}
-			
-	*/
-	
-	/*
-		header.mainHeader, footer.mainFooter, p.tagline {
-					@include span-columns (2 omega, 2);
-						}
-			div.mainContent {
-				@include span-columns (1, 2);
-				}
-			section.what, section.about {
-					@include span-columns (1, 2);
-					}
-			aside.dev, section.contact {
-					@include span-columns (1 omega, 2);
-					}
-			}
-	*/
 
 /* 	-------------------
 	MAIN SETTINGS 
 	-------------------
 */
 
+	/* Positioning and General Settings */
+	
+		/* Font Size */
+		$base-font-size: 16px;
+	
+		html {
+			background-color: $darkblue;
+			background-image: radial-gradient(circle, $white 10%, $darkblue 80%);
+			background-size: 1.5em 1.5em;
+			background-position: 0;
+			}
+			
+		/* Is I use Susy, this would be the container for the grid. */
+		
+		body {
+			position: relative;
+			min-width: 25em; 		/* 400px */
+			width: 100%;
+			}
+				
+		/* Settings for breakpoints */
+	
+		@media (min-width:80em) {	/* 1280px */
+				body {
+					width: 80%;
+					left: 10%;
+					}
+				}
+				
 	/* Overall Settings */
 
 		html
@@ -209,6 +168,7 @@
 			/* Sections */
 			
 			section {
+				background-color: $white;
 				border-bottom: $grayBlock;
 				padding: 5% 5%;
 				margin: 0;
@@ -232,15 +192,19 @@
 			color: $white;
 			border-bottom: none;
 			}
-						
+			
+			section.contact {
+			margin: 0;
+			}
+			
 			/* Main Footer */
 			
 			footer.mainFooter {
 			background: $gray;
-			margin: 0;
-			padding: 0;
 			color: $white;
 			text-align: center;
+			margin: 0;
+			padding: 2% 0;
 			}
 	
 			/* Aside */
@@ -263,8 +227,11 @@
 		
 			.tagline {
 			color: $blue;
+			background-color: $white;
 			font-size: 1.5em;
 			text-align: center;
+			margin: 0;
+			padding: 1% 0 0 0;
 			}
 				
 					
@@ -277,3 +244,55 @@
 				iwidth: 3em;
 				}
 			}	
+			
+			
+/* 	-------------------
+	GRID / SUSY SETTINGS
+	-------------------
+*/	
+
+	/* Some failed attempts at using Susy. */
+
+		
+	/*		@include at-breakpoint(47em 4) {
+				body {
+					width = 80%;
+					left = 10%;
+					}
+				}
+	*/
+	
+	/*		@include at-breakpoint(47em 4) {
+			
+			header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
+					width: 100%;
+					}
+					
+			section.what, section.about, aside.dev, section.contact {
+					width: 50%*(div.mainContent);
+					}
+			
+	*/
+	
+	/*
+		header.mainHeader, footer.mainFooter, p.tagline {
+					@include span-columns (2 omega, 2);
+						}
+			div.mainContent {
+				@include span-columns (1, 2);
+				}
+			section.what, section.about {
+					@include span-columns (1, 2);
+					}
+			aside.dev, section.contact {
+					@include span-columns (1 omega, 2);
+					}
+			}
+	*/
+
+		/* Establish number of columns. */		
+	
+	/*
+		$media-layout: 1;
+		$media-layout: 47em 2;		/* 752px */
+		
