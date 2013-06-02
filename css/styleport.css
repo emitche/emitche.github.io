@@ -76,28 +76,43 @@
 	GRID / SUSY SETTINGS
 	-------------------
 */
-/* line 31, ../scss/styleport.scss */
-html {
-  background-color: #42c0cf;
-}
-
+/*	html {
+		background-color: $blue;
+		color: $blue;
+		}
+*/
 /* Susy Container */
-/* line 36, ../scss/styleport.scss */
+/* line 38, ../scss/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
   /* 400px */
-  max-width: 62.5em;
   width: 100%;
 }
 
 /* Establish number of columns. */
-/* 752px */
+                      		/*
+$media-layout: 1;
+$media-layout: 47em 2;		/* 752px */
 /* Settings for breakpoints */
+@media (min-width: 80em) {
+  /* line 54, ../scss/styleport.scss */
+  body {
+    width: 80%;
+    left: 10%;
+  }
+}
+/*		@include at-breakpoint(47em 4) {
+			body {
+				width = 80%;
+				left = 10%;
+				}
+			}
+*/
 /*		@include at-breakpoint(47em 4) {
 		
 		header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
-				width: 80%;
+				width: 100%;
 				}
 				
 		section.what, section.about, aside.dev, section.contact {
@@ -107,16 +122,16 @@ body {
 */
 /*
 	header.mainHeader, footer.mainFooter, p.tagline {
-				@include span-columns (4 omega, 6);
+				@include span-columns (2 omega, 2);
 					}
 		div.mainContent {
-			@include span-columns (4, 6);
+			@include span-columns (1, 2);
 			}
 		section.what, section.about {
-				@include span-columns (2, 4);
+				@include span-columns (1, 2);
 				}
 		aside.dev, section.contact {
-				@include span-columns (2 omega, 4);
+				@include span-columns (1 omega, 2);
 				}
 		}
 */
@@ -125,7 +140,7 @@ body {
 	-------------------
 */
 /* Overall Settings */
-/* line 85, ../scss/styleport.scss */
+/* line 104, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -133,34 +148,34 @@ html {
   background-color: white;
 }
 
-/* line 91, ../scss/styleport.scss */
+/* line 110, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 95, ../scss/styleport.scss */
+/* line 114, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 100, ../scss/styleport.scss */
+/* line 119, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 104, ../scss/styleport.scss */
+/* line 123, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 109, ../scss/styleport.scss */
+/* line 128, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 112, ../scss/styleport.scss */
+/* line 131, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -170,11 +185,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 119, ../scss/styleport.scss */
+/* line 138, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 122, ../scss/styleport.scss */
+/* line 141, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -184,7 +199,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 130, ../scss/styleport.scss */
+/* line 149, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
@@ -198,48 +213,48 @@ ul {
 	----------------------
 */
 /* Main Header and Footer*/
-/* line 144, ../scss/styleport.scss */
+/* line 163, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 148, ../scss/styleport.scss */
+/* line 167, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 151, ../scss/styleport.scss */
+/* line 170, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 156, ../scss/styleport.scss */
+/* line 175, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 150%;
 }
 
-/* line 161, ../scss/styleport.scss */
+/* line 180, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 168, ../scss/styleport.scss */
+/* line 187, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0 .5em;
   text-align: center;
 }
-/* line 171, ../scss/styleport.scss */
+/* line 190, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 178, ../scss/styleport.scss */
+/* line 197, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -250,18 +265,18 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 192, ../scss/styleport.scss */
+/* line 211, ../scss/styleport.scss */
 section {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 197, ../scss/styleport.scss */
+/* line 216, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 202, ../scss/styleport.scss */
+/* line 221, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -269,7 +284,7 @@ section dt {
 }
 
 /* Contact Section */
-/* line 211, ../scss/styleport.scss */
+/* line 230, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
@@ -277,7 +292,7 @@ section dt {
 }
 
 /* Main Footer */
-/* line 219, ../scss/styleport.scss */
+/* line 238, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   margin: 0;
@@ -287,7 +302,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 229, ../scss/styleport.scss */
+/* line 248, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -295,14 +310,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 237, ../scss/styleport.scss */
+/* line 256, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5em;
 }
 
 /* Tagline */
-/* line 245, ../scss/styleport.scss */
+/* line 264, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   font-size: 1.5em;
@@ -310,11 +325,11 @@ aside.dev h1 {
 }
 
 /* Icons */
-/* line 255, ../scss/styleport.scss */
+/* line 274, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 256, ../scss/styleport.scss */
+/* line 275, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;

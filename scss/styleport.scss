@@ -28,28 +28,47 @@
 */	
 		$base-font-size: 16px;
 		
-		html {
+	/*	html {
 			background-color: $blue;
+			color: $blue;
 			}
+	*/
 			
 		/* Susy Container */
 		body {
 			position: relative;
 			min-width: 25em; 		/* 400px */
-			max-width: 62.5em;
 			width: 100%;
 			}
 		
 	/* Establish number of columns. */		
+	
+	/*
 		$media-layout: 1;
-		$media-layout: 47em 4;		/* 752px */
+		$media-layout: 47em 2;		/* 752px */
+		
 		
 	/* Settings for breakpoints */
+	
+		@media (min-width:80em) {
+				body {
+					width: 80%;
+					left: 10%;
+					}
+				}
 		
+	/*		@include at-breakpoint(47em 4) {
+				body {
+					width = 80%;
+					left = 10%;
+					}
+				}
+	*/
+	
 	/*		@include at-breakpoint(47em 4) {
 			
 			header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
-					width: 80%;
+					width: 100%;
 					}
 					
 			section.what, section.about, aside.dev, section.contact {
@@ -60,16 +79,16 @@
 	
 	/*
 		header.mainHeader, footer.mainFooter, p.tagline {
-					@include span-columns (4 omega, 6);
+					@include span-columns (2 omega, 2);
 						}
 			div.mainContent {
-				@include span-columns (4, 6);
+				@include span-columns (1, 2);
 				}
 			section.what, section.about {
-					@include span-columns (2, 4);
+					@include span-columns (1, 2);
 					}
 			aside.dev, section.contact {
-					@include span-columns (2 omega, 4);
+					@include span-columns (1 omega, 2);
 					}
 			}
 	*/
