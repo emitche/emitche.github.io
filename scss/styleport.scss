@@ -28,9 +28,15 @@
 */	
 		$base-font-size: 16px;
 		
+		html {
+			background-color: $blue;
+			}
+			
+		/* Susy Container */
 		body {
 			position: relative;
 			min-width: 25em; 		/* 400px */
+			max-width: 62.5em;
 			width: 100%;
 			}
 		
@@ -184,9 +190,9 @@
 			/* Sections */
 			
 			section {
-			border-bottom: $grayBlock;
-			padding: 5% 5%;
-			margin: 0;
+				border-bottom: $grayBlock;
+				padding: 5% 5%;
+				margin: 0;
 				
 				h1 {
 				color: $darkblue;
@@ -202,7 +208,7 @@
 			
 			/* Contact Section */
 			
-			.contact, h1.contact, aside.dev {
+			.contact, h1.contact {
 			background-color: $blue;
 			color: $white;
 			border-bottom: none;
@@ -220,16 +226,19 @@
 	
 			/* Aside */
 			
-			aside.dev h1 {
+			aside.dev {
+				border-bottom: $grayBlock;
+				padding: 5% 5%;
+				margin: 0;
+					
+				background-color: $blue;
+				color: $white;
+			
+				h1 {
 				color: $white;
 				font-size: 1.5em;
 				}
-			
-			aside.dev {
-				padding: 5%;
 				}
-				
-			
 				
 			/* Tagline */
 		
