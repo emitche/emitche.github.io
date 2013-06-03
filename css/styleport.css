@@ -81,13 +81,19 @@
 /* line 36, ../scss/styleport.scss */
 html {
   background-color: #25a4b3;
+  background-image: -webkit-gradient(radial, circle, 0, circle, 80, color-stop(10%, #ffffff), color-stop(80%, #25a4b3));
+  background-image: -webkit-radial-gradient(circle, #ffffff 10%, #25a4b3 80%);
+  background-image: -moz-radial-gradient(circle, #ffffff 10%, #25a4b3 80%);
+  background-image: -o-radial-gradient(circle, #ffffff 10%, #25a4b3 80%);
   background-image: radial-gradient(circle, #ffffff 10%, #25a4b3 80%);
+  background-size: 24px 24px;
+  /* Webkit support */
   background-size: 1.5em 1.5em;
   background-position: 0;
 }
 
 /* Is I use Susy, this would be the container for the grid. */
-/* line 45, ../scss/styleport.scss */
+/* line 46, ../scss/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
@@ -98,14 +104,14 @@ body {
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 54, ../scss/styleport.scss */
+  /* line 55, ../scss/styleport.scss */
   body {
     width: 80%;
     left: 10%;
   }
 }
 /* Overall Settings */
-/* line 63, ../scss/styleport.scss */
+/* line 64, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -113,34 +119,34 @@ html {
   background-color: white;
 }
 
-/* line 69, ../scss/styleport.scss */
+/* line 70, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 73, ../scss/styleport.scss */
+/* line 74, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 78, ../scss/styleport.scss */
+/* line 79, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 82, ../scss/styleport.scss */
+/* line 83, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 87, ../scss/styleport.scss */
+/* line 88, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 90, ../scss/styleport.scss */
+/* line 91, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -150,11 +156,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 97, ../scss/styleport.scss */
+/* line 98, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 100, ../scss/styleport.scss */
+/* line 101, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -164,7 +170,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 108, ../scss/styleport.scss */
+/* line 109, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
@@ -178,48 +184,48 @@ ul {
 	----------------------
 */
 /* Main Header and Footer*/
-/* line 122, ../scss/styleport.scss */
+/* line 123, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 126, ../scss/styleport.scss */
+/* line 127, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 129, ../scss/styleport.scss */
+/* line 130, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 134, ../scss/styleport.scss */
+/* line 135, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 150%;
 }
 
-/* line 139, ../scss/styleport.scss */
+/* line 140, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 146, ../scss/styleport.scss */
+/* line 147, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0 .5em;
   text-align: center;
 }
-/* line 149, ../scss/styleport.scss */
+/* line 150, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 156, ../scss/styleport.scss */
+/* line 157, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -230,19 +236,19 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 170, ../scss/styleport.scss */
+/* line 171, ../scss/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 176, ../scss/styleport.scss */
+/* line 177, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 181, ../scss/styleport.scss */
+/* line 182, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -250,20 +256,20 @@ section dt {
 }
 
 /* Contact Section */
-/* line 190, ../scss/styleport.scss */
+/* line 191, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
-/* line 196, ../scss/styleport.scss */
+/* line 197, ../scss/styleport.scss */
 section.contact {
   margin: 0;
 }
 
 /* Main Footer */
-/* line 202, ../scss/styleport.scss */
+/* line 203, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -273,7 +279,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 212, ../scss/styleport.scss */
+/* line 213, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -281,14 +287,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 220, ../scss/styleport.scss */
+/* line 221, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5em;
 }
 
 /* Tagline */
-/* line 228, ../scss/styleport.scss */
+/* line 229, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -299,11 +305,11 @@ aside.dev h1 {
 }
 
 /* Icons */
-/* line 241, ../scss/styleport.scss */
+/* line 242, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 242, ../scss/styleport.scss */
+/* line 243, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;

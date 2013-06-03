@@ -35,7 +35,8 @@
 	
 		html {
 			background-color: $darkblue;
-			background-image: radial-gradient(circle, $white 10%, $darkblue 80%);
+			@include background-image (radial-gradient(circle, $white 10%, $darkblue 80%)); 
+			background-size: 24px 24px; /* Webkit support */
 			background-size: 1.5em 1.5em;
 			background-position: 0;
 			}
