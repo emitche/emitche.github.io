@@ -37,7 +37,9 @@
 		$base-font-size: 1rem;
 	
 			@media (min-width:120em) {
-				$base-font-size: 2*($base-font-size);
+				$base-font-size: 32px;
+				$base-font-size: 2em;
+				$base-font-size: 2rem;
 				}
 			
 		html {
@@ -239,7 +241,7 @@
 			
 				h1 {
 				color: $white;
-				font-size: 1.5em;
+				font-size: 1.5rem;
 				}
 				}
 				
@@ -248,7 +250,7 @@
 			.tagline {
 			color: $blue;
 			background-color: $white;
-			font-size: 1.5em;
+			font-size: 1.5rem;
 			text-align: center;
 			margin: 0;
 			padding: 1% 2% 0 2%;
@@ -265,7 +267,7 @@
 			ul.icons li
 			{display: inline;
 				img {
-				height: 3em;
-				iwidth: 3em;
+				height: 3rem;
+				iwidth: 3rem;
 				}
 			}	
