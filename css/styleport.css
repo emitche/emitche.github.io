@@ -110,8 +110,15 @@ body {
     left: 10%;
   }
 }
+@media (max-width: 24.5em) {
+  /* 1280px */
+  /* line 62, ../scss/styleport.scss */
+  body {
+    min-width: 14em;
+  }
+}
 /* Overall Settings */
-/* line 64, ../scss/styleport.scss */
+/* line 70, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -119,34 +126,34 @@ html {
   background-color: white;
 }
 
-/* line 70, ../scss/styleport.scss */
+/* line 76, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 74, ../scss/styleport.scss */
+/* line 80, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 79, ../scss/styleport.scss */
+/* line 85, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 83, ../scss/styleport.scss */
+/* line 89, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 88, ../scss/styleport.scss */
+/* line 94, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 91, ../scss/styleport.scss */
+/* line 97, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -156,11 +163,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 98, ../scss/styleport.scss */
+/* line 104, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 101, ../scss/styleport.scss */
+/* line 107, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -170,7 +177,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 109, ../scss/styleport.scss */
+/* line 115, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
@@ -184,48 +191,55 @@ ul {
 	----------------------
 */
 /* Main Header and Footer*/
-/* line 123, ../scss/styleport.scss */
+/* line 129, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 127, ../scss/styleport.scss */
+/* line 133, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 130, ../scss/styleport.scss */
+/* line 136, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 135, ../scss/styleport.scss */
+/* line 141, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 150%;
 }
 
-/* line 140, ../scss/styleport.scss */
+@media (max-width: 24.5em) {
+  /* line 148, ../scss/styleport.scss */
+  header h1.mainHeader, p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
+  section h2, .services dt, h2.about {
+    font-size: 125%;
+  }
+}
+/* line 153, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 147, ../scss/styleport.scss */
+/* line 160, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0 .5em;
   text-align: center;
 }
-/* line 150, ../scss/styleport.scss */
+/* line 163, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 157, ../scss/styleport.scss */
+/* line 170, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -236,19 +250,19 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 171, ../scss/styleport.scss */
+/* line 184, ../scss/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 177, ../scss/styleport.scss */
+/* line 190, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 182, ../scss/styleport.scss */
+/* line 195, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -256,20 +270,20 @@ section dt {
 }
 
 /* Contact Section */
-/* line 191, ../scss/styleport.scss */
+/* line 204, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
-/* line 197, ../scss/styleport.scss */
+/* line 210, ../scss/styleport.scss */
 section.contact {
   margin: 0;
 }
 
 /* Main Footer */
-/* line 203, ../scss/styleport.scss */
+/* line 216, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -279,7 +293,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 213, ../scss/styleport.scss */
+/* line 226, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -287,14 +301,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 221, ../scss/styleport.scss */
+/* line 234, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5em;
 }
 
 /* Tagline */
-/* line 229, ../scss/styleport.scss */
+/* line 242, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -306,17 +320,17 @@ aside.dev h1 {
 
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 239, ../scss/styleport.scss */
+  /* line 252, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 }
 /* Icons */
-/* line 247, ../scss/styleport.scss */
+/* line 260, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 248, ../scss/styleport.scss */
+/* line 261, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;
