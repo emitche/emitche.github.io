@@ -80,7 +80,7 @@
 */
 /* Positioning and General Settings */
 /* Font Size */
-/* line 37, ../scss/styleport.scss */
+/* line 43, ../scss/styleport.scss */
 html {
   background-color: #25a4b3;
   background-image: -webkit-gradient(radial, circle, 0, circle, 80, color-stop(10%, #ffffff), color-stop(80%, #25a4b3));
@@ -94,7 +94,7 @@ html {
   background-position: 0;
 }
 
-/* line 45, ../scss/styleport.scss */
+/* line 51, ../scss/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
@@ -105,7 +105,7 @@ body {
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 54, ../scss/styleport.scss */
+  /* line 60, ../scss/styleport.scss */
   body {
     width: 80%;
     left: 10%;
@@ -113,13 +113,13 @@ body {
 }
 @media (max-width: 24.5em) {
   /* 1280px */
-  /* line 61, ../scss/styleport.scss */
+  /* line 67, ../scss/styleport.scss */
   body {
     min-width: 14em;
   }
 }
 /* Text Settings */
-/* line 69, ../scss/styleport.scss */
+/* line 75, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -127,34 +127,34 @@ html {
   background-color: white;
 }
 
-/* line 75, ../scss/styleport.scss */
+/* line 81, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 79, ../scss/styleport.scss */
+/* line 85, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 84, ../scss/styleport.scss */
+/* line 90, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 88, ../scss/styleport.scss */
+/* line 94, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 93, ../scss/styleport.scss */
+/* line 99, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 96, ../scss/styleport.scss */
+/* line 102, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -164,11 +164,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 103, ../scss/styleport.scss */
+/* line 109, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 106, ../scss/styleport.scss */
+/* line 112, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -178,7 +178,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 114, ../scss/styleport.scss */
+/* line 120, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
@@ -192,55 +192,55 @@ ul {
 	----------------------
 */
 /* Main Header and Footer */
-/* line 129, ../scss/styleport.scss */
+/* line 135, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 133, ../scss/styleport.scss */
+/* line 139, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 136, ../scss/styleport.scss */
+/* line 142, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 141, ../scss/styleport.scss */
+/* line 147, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 150%;
 }
 
 @media (max-width: 24.5em) {
-  /* line 148, ../scss/styleport.scss */
+  /* line 154, ../scss/styleport.scss */
   header h1.mainHeader, p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
 }
-/* line 153, ../scss/styleport.scss */
+/* line 159, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 160, ../scss/styleport.scss */
+/* line 166, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0 .5em;
   text-align: center;
 }
-/* line 163, ../scss/styleport.scss */
+/* line 169, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 170, ../scss/styleport.scss */
+/* line 176, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -251,19 +251,19 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 184, ../scss/styleport.scss */
+/* line 190, ../scss/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 190, ../scss/styleport.scss */
+/* line 196, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 195, ../scss/styleport.scss */
+/* line 201, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -271,20 +271,20 @@ section dt {
 }
 
 /* Contact Section */
-/* line 204, ../scss/styleport.scss */
+/* line 210, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
-/* line 210, ../scss/styleport.scss */
+/* line 216, ../scss/styleport.scss */
 section.contact {
   margin: 0;
 }
 
 /* Main Footer */
-/* line 216, ../scss/styleport.scss */
+/* line 222, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -294,7 +294,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 226, ../scss/styleport.scss */
+/* line 232, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -302,14 +302,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 234, ../scss/styleport.scss */
+/* line 240, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5em;
 }
 
 /* Tagline */
-/* line 242, ../scss/styleport.scss */
+/* line 248, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -321,17 +321,17 @@ aside.dev h1 {
 
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 252, ../scss/styleport.scss */
+  /* line 258, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 }
 /* Icons */
-/* line 260, ../scss/styleport.scss */
+/* line 266, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 261, ../scss/styleport.scss */
+/* line 267, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;
