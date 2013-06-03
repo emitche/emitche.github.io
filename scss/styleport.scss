@@ -33,14 +33,16 @@
 	
 		/* Font Size */
 		body {
-		$base-font-size: 16px;
-		$base-font-size: 1em;
-		$base-font-size: 1rem;
+		font-size: 16px;
+		font-size: 1em;
+		font-size: 1rem;
 		}
 	
 			@media (min-width:120em) {	/* 1920 px */
 				body {
-				font-size: 200%;
+				font-size: 20px;
+				font-size: 1.25em;
+				font-size: 1.25rem;
 				}
 				}
 			
