@@ -1,9 +1,10 @@
-﻿/* Overall CSS Attributes */
+﻿/* Author: Elizabeth Mitchell */
+/* Working Draft of Portfolio Website */
+
+/* Overall CSS Attributes */
 	
 	/* See cleanhouse */
 	@import 'cleanhouse';
-	@import 'susy';
-	
 
 /* 	-------------------
 	THEME SETTINGS 
@@ -40,8 +41,6 @@
 			background-size: 1.5em 1.5em;
 			background-position: 0;
 			}
-			
-		/* Is I use Susy, this would be the container for the grid. */
 		
 		body {
 			position: relative;
@@ -64,7 +63,7 @@
 					}
 				}
 				
-	/* Overall Settings */
+	/* Text Settings */
 
 		html
 			{font-family: Verdana, sans-serif;
@@ -125,7 +124,8 @@
 		----------------------
 	*/
 
-		/* Main Header and Footer*/
+		/* Main Header and Footer */
+		
 			body > header, footer {
 				background-color: $blue;
 				color: $white;
@@ -263,55 +263,3 @@
 				iwidth: 3em;
 				}
 			}	
-			
-			
-/* 	-------------------
-	GRID / SUSY SETTINGS
-	-------------------
-*/	
-
-	/* Some failed attempts at using Susy. */
-
-		
-	/*		@include at-breakpoint(47em 4) {
-				body {
-					width = 80%;
-					left = 10%;
-					}
-				}
-	*/
-	
-	/*		@include at-breakpoint(47em 4) {
-			
-			header.mainHeader, footer.mainFooter, p.tagline, div.mainContent {
-					width: 100%;
-					}
-					
-			section.what, section.about, aside.dev, section.contact {
-					width: 50%*(div.mainContent);
-					}
-			
-	*/
-	
-	/*
-		header.mainHeader, footer.mainFooter, p.tagline {
-					@include span-columns (2 omega, 2);
-						}
-			div.mainContent {
-				@include span-columns (1, 2);
-				}
-			section.what, section.about {
-					@include span-columns (1, 2);
-					}
-			aside.dev, section.contact {
-					@include span-columns (1 omega, 2);
-					}
-			}
-	*/
-
-		/* Establish number of columns. */		
-	
-	/*
-		$media-layout: 1;
-		$media-layout: 47em 2;		/* 752px */
-		
