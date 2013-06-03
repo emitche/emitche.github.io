@@ -301,15 +301,22 @@ aside.dev h1 {
   font-size: 1.5em;
   text-align: center;
   margin: 0;
-  padding: 1% 0 0 0;
+  padding: 1% 2% 0 2%;
 }
 
+@media (min-width: 80em) {
+  /* 1280px */
+  /* line 239, ../scss/styleport.scss */
+  .tagline {
+    padding: 1% 20% 0 20%;
+  }
+}
 /* Icons */
-/* line 242, ../scss/styleport.scss */
+/* line 247, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 243, ../scss/styleport.scss */
+/* line 248, ../scss/styleport.scss */
 ul.icons li img {
   height: 3em;
   iwidth: 3em;

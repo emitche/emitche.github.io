@@ -232,10 +232,15 @@
 			font-size: 1.5em;
 			text-align: center;
 			margin: 0;
-			padding: 1% 0 0 0;
+			padding: 1% 2% 0 2%;
 			}
 				
-					
+			@media (min-width:80em) {	/* 1280px */
+				.tagline {
+					padding: 1% 20% 0 20%;
+					}
+				}
+			
 			/* Icons */
 			
 			ul.icons li
