@@ -34,12 +34,10 @@
 		/* Font Size */
 		$base-font-size: 16px;
 		$base-font-size: 1em;
-		$base-font-size: 1rem;
 	
 			@media (min-width:120em) {
 				$base-font-size: 32px;
 				$base-font-size: 2em;
-				$base-font-size: 2rem;
 				}
 			
 		html {
@@ -268,6 +266,6 @@
 			{display: inline;
 				img {
 				height: 3rem;
-				width: 3rem;
+				max-height: 4em;
 				}
 			}	
