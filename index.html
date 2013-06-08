@@ -12,6 +12,28 @@
 	<link rel="stylesheet" type="text/css" href="css/styleport.css">
 	<meta name="description">
 	<link rel="icon" type="image/png" href="images/projects/daisy.png">
+	<!--<script type="text/javascript" src="javascript/form.js"> </script>-->
+	<script type="text/javascript">	
+		var name = document.forms["contactForm"]["contactName"].value;
+		var email = document.forms["contactForm"]["contactEmail"].value;
+		var subject = doucument.forms["contactForm"]["subject"].value;
+		var message = doucument.forms["contactForm"]["message"].value;
+		
+		function validateForm() {
+			if 	(name='' || name=null) ||
+				(email='' || email=null) ||
+				(subject='' || subject=null) ||
+				(message='' || message=null)
+				
+					{
+					alert("All fields are required");
+					return false;
+					}
+			
+			else {return true;}
+			}		
+	</script>
+
 </head>
 
 
@@ -91,25 +113,25 @@
 	<p><strong>This contact form doesn't work yet, but will work soon.</strong></p>
 
 		<!-- These are form elements. Integrate with JavaScript. -->
-		<form>
+		<form id="contactForm" onsubmit="return validateForm" method="post">
 			<p class="field">Name
-				<input type="text" id="contactName" name="contactName" value />
+				<input type="text" id="contactName" name="contactName">
 			</p>
 			
 			<p class="field">Email
-				<input type="text" id="contactEmail" name="contactEmail" value />
+				<input type="text" id="contactEmail" name="contactEmail">
 			</p>
 			
 			<p class="field">Subject
-				<input type="text" id="Subject" name="Subject" value />
+				<input type="text" id="subject" name="Subject">
 			</p>
 			
 			<p class="field">Message
-				<textarea type="text" id="Message" name="Message" value></textarea>
+				<textarea type="text" id="message" name="Message"></textarea>
 			</p>
 			
 			<p class="field">
-				<input type="button" value="Send Message" onclick="send" />
+				<input type="submit" id="sendButton" value="Send Message" />
 			</p>
 		</form>
 			
