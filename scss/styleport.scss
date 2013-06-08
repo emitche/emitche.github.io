@@ -257,9 +257,6 @@
 			font-size: 1.5rem;
 			margin: 0;
 			padding: 1% 2% 0 2%;
-			}
-			
-			p.tagline {
 			text-align: center;
 			}
 			
@@ -268,33 +265,13 @@
 					padding: 1% 20% 0 20%;
 					}
 				}
-				
-			img.tagline {
-				display: none;
-				}
 
 			@media (min-width:50em) { /* 800px */
-				div.tagline {
-					width: 100%;
-					}
-				
-				img.tagline {
-					display:inline;
-					position:relative;
-					float: left;
-					width: 10%;
-					height: 80%;
-					}
-				
-				p.tagline {
-					float: right;
-					position: relative;
-					}
-				
-				section.what {
-					clear: both;
-					}
+				p.tagline:before {
+				content: url(images/projects/daisy.png);
 				}
+				}
+				
 			/* Icons */
 			
 			ul.icons li

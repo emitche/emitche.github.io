@@ -332,58 +332,29 @@ aside.dev h1 {
   font-size: 1.5rem;
   margin: 0;
   padding: 1% 2% 0 2%;
-}
-
-/* line 262, ../scss/styleport.scss */
-p.tagline {
   text-align: center;
 }
 
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 267, ../scss/styleport.scss */
+  /* line 264, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 }
-/* line 272, ../scss/styleport.scss */
-img.tagline {
-  display: none;
-}
-
 @media (min-width: 50em) {
   /* 800px */
-  /* line 277, ../scss/styleport.scss */
-  div.tagline {
-    width: 100%;
-  }
-
-  /* line 281, ../scss/styleport.scss */
-  img.tagline {
-    display: inline;
-    position: relative;
-    float: left;
-    width: 10%;
-    height: 80%;
-  }
-
-  /* line 289, ../scss/styleport.scss */
-  p.tagline {
-    float: right;
-    position: relative;
-  }
-
-  /* line 294, ../scss/styleport.scss */
-  section.what {
-    clear: both;
+  /* line 270, ../scss/styleport.scss */
+  p.tagline:before {
+    content: url(images/projects/daisy.png);
   }
 }
 /* Icons */
-/* line 301, ../scss/styleport.scss */
+/* line 278, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 302, ../scss/styleport.scss */
+/* line 279, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
