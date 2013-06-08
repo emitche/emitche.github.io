@@ -1,7 +1,7 @@
 ﻿<?php
 
-if return validateForm = "true" 
-	{echo('This means the form is validated');
+if return validateForm = "true" {
+	echo('This means the form is validated');
 	}
 	
 else { 
