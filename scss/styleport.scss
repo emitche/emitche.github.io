@@ -125,7 +125,7 @@
 		ul
 			{list-style: none;
 			}
-
+			
 /* 	-------------------
 	SPECIFIC SETTINGS 
 	-------------------
@@ -255,17 +255,46 @@
 			color: $blue;
 			background-color: $white;
 			font-size: 1.5rem;
-			text-align: center;
 			margin: 0;
 			padding: 1% 2% 0 2%;
 			}
-				
+			
+			p.tagline {
+			text-align: center;
+			}
+			
 			@media (min-width:80em) {	/* 1280px */
 				.tagline {
 					padding: 1% 20% 0 20%;
 					}
 				}
-			
+				
+			img.tagline {
+				display: none;
+				}
+
+			@media (min-width:50em) { /* 800px */
+				div.tagline {
+					width: 100%;
+					}
+				
+				img.tagline {
+					display:inline;
+					position:relative;
+					float: left;
+					width: 10%;
+					height: 80%;
+					}
+				
+				p.tagline {
+					float: right;
+					position: relative;
+					}
+				
+				section.what {
+					clear: both;
+					}
+				}
 			/* Icons */
 			
 			ul.icons li
