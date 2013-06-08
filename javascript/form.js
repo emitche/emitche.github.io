@@ -4,7 +4,7 @@
 //	if };
 	
 // To use ECMA-262 5.1, uncomment the below line:
-"use strict"; 	
+// "use strict"; 	
 
 var contactName = getElementById("contactName");
 var contactEmail = getElementById("contactEmail");
