@@ -342,11 +342,11 @@ aside.dev h1 {
     padding: 1% 20% 0 20%;
   }
 }
-@media (min-width: 50em) {
+@media (min-width: 20em) {
   /* 800px */
   /* line 270, ../scss/styleport.scss */
   p.tagline:before {
-    content: url(images/projects/daisy.png);
+    content: url(daisy.png);
   }
 }
 /* Icons */
