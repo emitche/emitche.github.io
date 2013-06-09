@@ -268,7 +268,8 @@
 
 			@media (min-width:20em) { /* 800px */
 				p.tagline:before {
-				content:url(daisy.png);
+				content: url(../daisy.png);
+				display:inline-block;
 				}
 				}
 				

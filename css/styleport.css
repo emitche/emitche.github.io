@@ -346,15 +346,16 @@ aside.dev h1 {
   /* 800px */
   /* line 270, ../scss/styleport.scss */
   p.tagline:before {
-    content: url(daisy.png);
+    content: url(../daisy.png);
+    display: inline-block;
   }
 }
 /* Icons */
-/* line 278, ../scss/styleport.scss */
+/* line 279, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 279, ../scss/styleport.scss */
+/* line 280, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
