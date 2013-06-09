@@ -268,8 +268,9 @@
 
 			@media (min-width:20em) { /* 800px */
 				p.tagline:before {
-				content: url(../daisy.png);
-				display:inline-block;
+				content: url(../images/projects/daisy3.png);
+				display:inline;
+				float:left;
 				}
 				}
 				
