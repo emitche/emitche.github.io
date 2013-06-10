@@ -156,9 +156,12 @@
 				}
 				
 			@media (max-width:30em) {
-				h1.mainHeader, p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact, 
+				p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact, 
 				section h2, .services dt, h2.about {
 						font-size: 125%;
+						}
+				h1.mainHeader {
+						font-size: 140%;
 						}
 				}
 			
