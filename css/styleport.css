@@ -340,28 +340,37 @@ aside.dev h1 {
   text-align: center;
 }
 
-@media (min-width: 80em) {
-  /* 1280px */
-  /* line 270, ../scss/styleport.scss */
-  .tagline {
-    padding: 1% 20% 0 20%;
-  }
-}
-@media (min-width: 20em) {
+@media (min-width: 18em) {
   /* 800px */
-  /* line 276, ../scss/styleport.scss */
+  /* line 270, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
-    display: inline;
+    display: inline-block;
     float: left;
   }
 }
+@media (min-width: 80em) {
+  /* 1280px */
+  /* line 278, ../scss/styleport.scss */
+  .tagline {
+    padding: 1% 20% 0 20%;
+  }
+
+  /* line 282, ../scss/styleport.scss */
+  p.tagline:before {
+    content: url(../images/projects/daisy3.png);
+    display: inline-block;
+    float: left;
+    position: absolute;
+    left: 10%;
+  }
+}
 /* Icons */
-/* line 286, ../scss/styleport.scss */
+/* line 295, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 287, ../scss/styleport.scss */
+/* line 296, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;

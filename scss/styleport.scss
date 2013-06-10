@@ -266,19 +266,28 @@
 			text-align: center;
 			}
 			
+			@media (min-width:18em) { /* 800px */
+				p.tagline:before {
+					content: url(../images/projects/daisy3.png);
+					display:inline-block;
+					float:left;
+				}
+			}
+				
 			@media (min-width:80em) {	/* 1280px */
 				.tagline {
 					padding: 1% 20% 0 20%;
 					}
-				}
-
-			@media (min-width:20em) { /* 800px */
+					
 				p.tagline:before {
-				content: url(../images/projects/daisy3.png);
-				display:inline;
-				float:left;
+					content: url(../images/projects/daisy3.png);
+					display:inline-block;
+					float:left;
+					position: absolute;
+					left:10%;
+					}
 				}
-				}
+				
 				
 			/* Icons */
 			
