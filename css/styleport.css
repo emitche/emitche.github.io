@@ -127,11 +127,11 @@ body {
     left: 10%;
   }
 }
-@media (max-width: 24.5em) {
+@media (max-width: 30em) {
   /* 392px */
   /* line 73, ../scss/styleport.scss */
   body {
-    min-width: 14em;
+    min-width: 80%;
   }
 }
 /* Text Settings */
@@ -227,12 +227,12 @@ body > header ul li, footer ul li {
 /* line 153, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
-  font-size: 150%;
+  font-size: 200%;
 }
 
-@media (max-width: 24.5em) {
+@media (max-width: 30em) {
   /* line 160, ../scss/styleport.scss */
-  header h1.mainHeader, p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
+  h1.mainHeader, p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
@@ -290,22 +290,27 @@ section dt {
   font-weight: bold;
   font-size: 1.5rem;
 }
+/* line 219, ../scss/styleport.scss */
+section dd {
+  margin: 0;
+  padding: 0 0 2% 0;
+}
 
 /* Contact Section */
-/* line 222, ../scss/styleport.scss */
+/* line 227, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
-/* line 228, ../scss/styleport.scss */
+/* line 233, ../scss/styleport.scss */
 section.contact {
   margin: 0;
 }
 
 /* Main Footer */
-/* line 234, ../scss/styleport.scss */
+/* line 239, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -315,7 +320,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 244, ../scss/styleport.scss */
+/* line 249, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -323,14 +328,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 252, ../scss/styleport.scss */
+/* line 257, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5rem;
 }
 
 /* Tagline */
-/* line 260, ../scss/styleport.scss */
+/* line 265, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -340,9 +345,9 @@ aside.dev h1 {
   text-align: center;
 }
 
-@media (min-width: 18em) {
+@media (min-width: 30em) {
   /* 800px */
-  /* line 270, ../scss/styleport.scss */
+  /* line 275, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -351,12 +356,12 @@ aside.dev h1 {
 }
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 278, ../scss/styleport.scss */
+  /* line 283, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 
-  /* line 282, ../scss/styleport.scss */
+  /* line 287, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -366,11 +371,11 @@ aside.dev h1 {
   }
 }
 /* Icons */
-/* line 295, ../scss/styleport.scss */
+/* line 300, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 296, ../scss/styleport.scss */
+/* line 301, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
