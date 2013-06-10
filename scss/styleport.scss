@@ -171,12 +171,18 @@
 		
 			nav {
 				margin: 0;
-				padding: 0 .5em;
+				padding: 0;
+				text-align: center;
+				
+				ul {
+				padding: 0;
+				margin: 0;
+					}
+					
 				ul li {
 						margin: 0;
 						padding: .5em;
 						}
-				text-align: center;
 				}
 		
 			nav.mainFooter {

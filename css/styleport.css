@@ -247,16 +247,21 @@ footer {
 /* line 172, ../scss/styleport.scss */
 nav {
   margin: 0;
-  padding: 0 .5em;
+  padding: 0;
   text-align: center;
 }
-/* line 175, ../scss/styleport.scss */
+/* line 177, ../scss/styleport.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 182, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 182, ../scss/styleport.scss */
+/* line 188, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -267,19 +272,19 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 196, ../scss/styleport.scss */
+/* line 202, ../scss/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 202, ../scss/styleport.scss */
+/* line 208, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 207, ../scss/styleport.scss */
+/* line 213, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
@@ -287,20 +292,20 @@ section dt {
 }
 
 /* Contact Section */
-/* line 216, ../scss/styleport.scss */
+/* line 222, ../scss/styleport.scss */
 .contact, h1.contact {
   background-color: #42c0cf;
   color: white;
   border-bottom: none;
 }
 
-/* line 222, ../scss/styleport.scss */
+/* line 228, ../scss/styleport.scss */
 section.contact {
   margin: 0;
 }
 
 /* Main Footer */
-/* line 228, ../scss/styleport.scss */
+/* line 234, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -310,7 +315,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 238, ../scss/styleport.scss */
+/* line 244, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -318,14 +323,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 246, ../scss/styleport.scss */
+/* line 252, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5rem;
 }
 
 /* Tagline */
-/* line 254, ../scss/styleport.scss */
+/* line 260, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -337,14 +342,14 @@ aside.dev h1 {
 
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 264, ../scss/styleport.scss */
+  /* line 270, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 }
 @media (min-width: 20em) {
   /* 800px */
-  /* line 270, ../scss/styleport.scss */
+  /* line 276, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline;
@@ -352,11 +357,11 @@ aside.dev h1 {
   }
 }
 /* Icons */
-/* line 280, ../scss/styleport.scss */
+/* line 286, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 281, ../scss/styleport.scss */
+/* line 287, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
