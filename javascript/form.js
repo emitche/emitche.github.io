@@ -6,23 +6,81 @@
 // To use ECMA-262 5.1, uncomment the below line:
 // "use strict"; 	
 
-var contactName = getElementById("contactName");
-var contactEmail = getElementById("contactEmail");
-var message = getElementbyId("message");
-
-function onclick(event)
-		send() {
-	if 	contactName != '' &
-		contactEmail !='' &
-		message !='' &
-		message !=''
+		var name = document.forms["contactForm"]["contactName"].value;
+		var email = document.forms["contactForm"]["contactEmail"].value;
+		var subject = doucument.forms["contactForm"]["subject"].value;
+		var message = doucument.forms["contactForm"]["message"].value;
 		
-			{alert("You are on the right track.")}
+		function testFunction() {
+		
+			if 	(name='' || name=null ||
+			     email='' || email=null ||
+				 subject='' || subject=null ||
+				 message='' || message=null)
+				
+					{
+					alert("All fields are required");
+					return false;
+					}
+			else {
+					alert("You are getting closer.");
+					return true;
+				}
+			};
 	
-	else {
-		alert("All fields are required to send your message.")
-		}
-	}	
+/*
+		var name = document.getElementById('contactName');
+		
+		function validateForm() {
+			if 	(name='' || name=null)
+					{
+					alert("All fields are required");
+					}
+			
+			else {alert("You might be getting closer");}
+			}		
+*/
+	
+/*
+		var name = document.forms["contactForm"]["contactName"].value;
+		var email = document.forms["contactForm"]["contactEmail"].value;
+		var subject = doucument.forms["contactForm"]["subject"].value;
+		var message = doucument.forms["contactForm"]["message"].value;
+		
+		function validateForm() {
+			if 	(name='' || name=null) ||
+				(email='' || email=null) ||
+				(subject='' || subject=null) ||
+				(message='' || message=null)
+				
+					{
+					alert("All fields are required");
+					return false;
+					}
+			
+			else {return true;}
+			}		
+*/	
+
+/*
+	var contactName = getElementById("contactName");
+	var contactEmail = getElementById("contactEmail");
+	var message = getElementbyId("message");
+
+	function onclick(event)
+			send() {
+		if 	contactName != '' &
+			contactEmail !='' &
+			message !='' &
+			message !=''
+			
+				{alert("You are on the right track.")}
+		
+		else {
+			alert("All fields are required to send your message.")
+			}
+		}		
+*/
 
 /*
 function onclick(sendButton) {
@@ -38,9 +96,8 @@ function onclick(sendButton) {
 		}
 	}	
 */		
-	
-	
-	
+
+		
 /*
 
 	<script type="text/javascript">

@@ -13,41 +13,6 @@
 	<meta name="description">
 	<link rel="icon" type="image/png" href="images/projects/daisy.png">
 	<!--<script type="text/javascript" src="javascript/form.js"> </script>-->
-	
-	<script type="text/javascript">	
-		var contactName = document.getElementById('contactName');
-		
-		function validateForm() {
-			if 	(name='' || name=null)
-					{
-					echo("All fields are required");
-					}
-			
-			else {echo("You might be getting closer");}
-			}		
-	</script>
-	
-	<!--<script type="text/javascript">	
-		var name = document.forms["contactForm"]["contactName"].value;
-		var email = document.forms["contactForm"]["contactEmail"].value;
-		var subject = doucument.forms["contactForm"]["subject"].value;
-		var message = doucument.forms["contactForm"]["message"].value;
-		
-		function validateForm() {
-			if 	(name='' || name=null) ||
-				(email='' || email=null) ||
-				(subject='' || subject=null) ||
-				(message='' || message=null)
-				
-					{
-					alert("All fields are required");
-					return false;
-					}
-			
-			else {return true;}
-			}		
-	</script>-->
-
 </head>
 
 
@@ -125,8 +90,8 @@
 	<p>I'd love to hear from you, especially if you're human.</p> 
 	<p><strong>This contact form doesn't work yet, but will work soon.</strong></p>
 
-		<!-- These are form elements. Integrate with JavaScript. -->
-		<form id="contactForm" onsubmit="return validateForm" method="post">
+		<!-- This still needs work with JavaScript and PHP. -->
+		<form id="contactForm" onsubmit="testFunction();" method="post" >
 			<p class="field">Name
 				<input type="text" id="contactName" name="contactName" />
 			</p>
