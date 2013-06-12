@@ -128,7 +128,7 @@ body {
   }
 }
 @media (max-width: 30em) {
-  /* 392px */
+  /* 480px */
   /* line 74, ../scss/styleport.scss */
   body {
     min-width: 80%;
@@ -346,7 +346,7 @@ aside.dev h1 {
 }
 
 @media (min-width: 30em) {
-  /* 800px */
+  /* 480px */
   /* line 277, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);

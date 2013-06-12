@@ -70,7 +70,7 @@
 					}
 				}
 				
-		@media (max-width:30em) {	/* 392px */
+		@media (max-width:30em) {	/* 480px */
 				body {
 					min-width:80%;
 					}
@@ -273,7 +273,7 @@
 			text-align: center;
 			}
 			
-			@media (min-width:30em) { /* 800px */
+			@media (min-width:30em) { /* 480px */
 				p.tagline:before {
 					content: url(../images/projects/daisy3.png);
 					display:inline-block;
