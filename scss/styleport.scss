@@ -1,5 +1,6 @@
 ﻿/* Author: Elizabeth Mitchell */
-/* Working Draft of Portfolio Website */
+/* Portfolio Website */
+
 
 /* Overall CSS Attributes */
 	
@@ -224,18 +225,16 @@
 				padding: 0 0 2% 0;
 				}
 			}
-			
-			/* Contact Section */
-			
-			.contact, h1.contact {
-			background-color: $blue;
-			color: $white;
-			border-bottom: none;
-			}
-			
-			section.contact {
-			margin: 0;
-			}
+
+				/* Specific Sections */
+				
+					/* About */
+					
+						section.about {
+						border-bottom: none;
+						}
+						
+		/* Settings for Other Items */
 			
 			/* Main Footer */
 			
