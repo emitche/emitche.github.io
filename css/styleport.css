@@ -1,5 +1,16 @@
 /* Author: Elizabeth Mitchell */
 /* Portfolio Website */
+/* Table of Contents 
+	* Overall CSS Attributes
+	* Theme Settings (colors and variables)
+	* Main Settings 
+		* Positioning and General Settings
+		* Breakpoints
+		* Text Settings
+	* Specific Settings
+		* Main Header and Footer
+		* Sections
+*/
 /* Overall CSS Attributes */
 /* See cleanhouse */
 /* Settings to make the CSS/SCSS easier to build. */
@@ -80,7 +91,7 @@
 */
 /* Positioning and General Settings */
 /* Font Size */
-/* line 36, ../scss/styleport.scss */
+/* line 50, ../scss/styleport.scss */
 body {
   font-size: 16px;
   font-size: 1em;
@@ -89,14 +100,14 @@ body {
 
 @media (min-width: 120em) {
   /* 1920 px */
-  /* line 43, ../scss/styleport.scss */
+  /* line 57, ../scss/styleport.scss */
   body {
     font-size: 20px;
     font-size: 1.25em;
     font-size: 1.25rem;
   }
 }
-/* line 50, ../scss/styleport.scss */
+/* line 64, ../scss/styleport.scss */
 html {
   background-color: #25a4b3;
   background-image: -webkit-gradient(radial, circle, 0, circle, 80, color-stop(10%, #ffffff), color-stop(80%, #25a4b3));
@@ -110,7 +121,7 @@ html {
   background-position: 0;
 }
 
-/* line 58, ../scss/styleport.scss */
+/* line 72, ../scss/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
@@ -121,7 +132,7 @@ body {
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 67, ../scss/styleport.scss */
+  /* line 81, ../scss/styleport.scss */
   body {
     width: 80%;
     left: 10%;
@@ -129,13 +140,13 @@ body {
 }
 @media (max-width: 30em) {
   /* 480px */
-  /* line 74, ../scss/styleport.scss */
+  /* line 88, ../scss/styleport.scss */
   body {
     min-width: 80%;
   }
 }
 /* Text Settings */
-/* line 82, ../scss/styleport.scss */
+/* line 96, ../scss/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
@@ -143,34 +154,34 @@ html {
   background-color: white;
 }
 
-/* line 88, ../scss/styleport.scss */
+/* line 102, ../scss/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 92, ../scss/styleport.scss */
+/* line 106, ../scss/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 97, ../scss/styleport.scss */
+/* line 111, ../scss/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 101, ../scss/styleport.scss */
+/* line 115, ../scss/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 106, ../scss/styleport.scss */
+/* line 120, ../scss/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 109, ../scss/styleport.scss */
+/* line 123, ../scss/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -180,11 +191,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 116, ../scss/styleport.scss */
+/* line 130, ../scss/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 119, ../scss/styleport.scss */
+/* line 133, ../scss/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -194,7 +205,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 127, ../scss/styleport.scss */
+/* line 141, ../scss/styleport.scss */
 ul {
   list-style: none;
 }
@@ -208,65 +219,65 @@ ul {
 	----------------------
 */
 /* Main Header and Footer */
-/* line 142, ../scss/styleport.scss */
+/* line 156, ../scss/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 146, ../scss/styleport.scss */
+/* line 160, ../scss/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 149, ../scss/styleport.scss */
+/* line 163, ../scss/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 154, ../scss/styleport.scss */
+/* line 168, ../scss/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 200%;
 }
 
 @media (max-width: 30em) {
-  /* line 161, ../scss/styleport.scss */
+  /* line 175, ../scss/styleport.scss */
   p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
 
-  /* line 164, ../scss/styleport.scss */
+  /* line 178, ../scss/styleport.scss */
   h1.mainHeader {
     font-size: 140%;
   }
 }
-/* line 169, ../scss/styleport.scss */
+/* line 183, ../scss/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 176, ../scss/styleport.scss */
+/* line 190, ../scss/styleport.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 181, ../scss/styleport.scss */
+/* line 195, ../scss/styleport.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 186, ../scss/styleport.scss */
+/* line 200, ../scss/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 192, ../scss/styleport.scss */
+/* line 206, ../scss/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -277,25 +288,25 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 206, ../scss/styleport.scss */
+/* line 220, ../scss/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 212, ../scss/styleport.scss */
+/* line 226, ../scss/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 217, ../scss/styleport.scss */
+/* line 231, ../scss/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
   font-size: 1.5rem;
 }
-/* line 223, ../scss/styleport.scss */
+/* line 237, ../scss/styleport.scss */
 section dd {
   margin: 0;
   padding: 0 0 2% 0;
@@ -303,14 +314,14 @@ section dd {
 
 /* Specific Sections */
 /* About */
-/* line 233, ../scss/styleport.scss */
+/* line 247, ../scss/styleport.scss */
 section.about {
   border-bottom: none;
 }
 
 /* Settings for Other Items */
 /* Main Footer */
-/* line 241, ../scss/styleport.scss */
+/* line 255, ../scss/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -320,7 +331,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 251, ../scss/styleport.scss */
+/* line 265, ../scss/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -328,14 +339,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 259, ../scss/styleport.scss */
+/* line 273, ../scss/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5rem;
 }
 
 /* Tagline */
-/* line 267, ../scss/styleport.scss */
+/* line 281, ../scss/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -347,7 +358,7 @@ aside.dev h1 {
 
 @media (min-width: 30em) {
   /* 480px */
-  /* line 277, ../scss/styleport.scss */
+  /* line 291, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -356,12 +367,12 @@ aside.dev h1 {
 }
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 285, ../scss/styleport.scss */
+  /* line 299, ../scss/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 
-  /* line 289, ../scss/styleport.scss */
+  /* line 303, ../scss/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -371,11 +382,11 @@ aside.dev h1 {
   }
 }
 /* Icons */
-/* line 302, ../scss/styleport.scss */
+/* line 316, ../scss/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 303, ../scss/styleport.scss */
+/* line 317, ../scss/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
