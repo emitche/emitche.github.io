@@ -322,7 +322,7 @@
 			}	
 			
 			/* Work */
-			
+					
 			.samples dd {
 			padding: 0;
 			}
@@ -331,11 +331,33 @@
 			padding: 2% 0 0 0;
 			}
 			
-			.samples dt:before {
-				content: url(../images/projects/daisy3.png);
-				display:block;
+			@media (min-width:47em) {   /* 752 px */
+			
+				dl.samples dt:before {
+					content: url(../images/projects/daisy3.png);
+					width: 2%;
+					display: inline-block;
+					float: left;
+					position: absolute;
+					padding: 0;
+					margin: 0;
+					left: -20%;
 				}
-				
+			
+				dl.samples dd, dl.samples dt {
+					position: relative;
+					left: 15%;
+					width: 80%;
+					clear:both;
+				}
+			}
+			
+			
+	/*		.samples dt, .samples dt:before {
+			clear: both;
+			}
+	*/
+					
 			/* Thirds */
 			
 				/* A setting to place work samples in a grid. */
