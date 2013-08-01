@@ -73,6 +73,7 @@
 			position: relative;
 			min-width: 25em; 		/* 400px */
 			width: 100%;
+			background-color: $white;
 			}
 				
 		/* Settings for breakpoints */
@@ -240,11 +241,11 @@
 				}
 			}
 
-				/* Specific Sections */
+				/* Specific Sections and Asides */
 				
-					/* About */
-					
-						section.about {
+					/* Last Section */
+		
+						section.contact {
 						border-bottom: none;
 						}
 						
@@ -319,3 +320,23 @@
 				max-height: 4em;
 				}
 			}	
+			
+			/* Work */
+			
+			.samples dd {
+			padding: 0;
+			}
+			
+			.samples dt {
+			padding: 2% 0 0 0;
+			}
+			
+			.samples dt:before {
+				content: url(../images/projects/daisy3.png);
+				display:block;
+				}
+				
+			/* Thirds */
+			
+				/* A setting to place work samples in a grid. */
+			
