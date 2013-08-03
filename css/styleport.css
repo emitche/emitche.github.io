@@ -316,7 +316,7 @@ section dd {
 /* Specific Sections and Asides */
 /* Last Section */
 /* line 248, ../scss/styleport.scss */
-section.contact {
+section.about {
   border-bottom: none;
 }
 
@@ -426,9 +426,3 @@ ul.icons li img {
     clear: both;
   }
 }
-/*		.samples dt, .samples dt:before {
-		clear: both;
-		}
-*/
-/* Thirds */
-/* A setting to place work samples in a grid. */
