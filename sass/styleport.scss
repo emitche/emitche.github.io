@@ -60,11 +60,21 @@
 				}
 				}
 			
+   
+    /* Polka dot background */
+    
 		html {
+      
+      /* Set fallback color */
 			background-color: $darkblue;
-			/* @include background-image (radial-gradient(circle, $white 10%, $darkblue 80%)); */
-			background-size: 24px 24px; /* Webkit support */
-			background-size: 1.5em 1.5em;
+     
+      /* Circle radial gradient */
+			@include background-image (radial-gradient(circle, $darkblue 30px, $white 30px));
+      
+      /* Specify spacing between circles. */
+			background-size: 80px 88px; /* Webkit support */
+			background-size: 5em 5.5em;
+      
 			background-position: 0;
 			}
 		
