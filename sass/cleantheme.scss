@@ -1,0 +1,26 @@
+	@import 'cleanhouse';
+  
+  @import 'colors';
+  @import 'variables';
+  @import 'base';
+  @import 'text';
+  @import 'nav';
+  @import 'sections';
+    
+    
+  /* Definition Lists */
+  
+    dl {
+      padding: 1%;
+      }
+    
+    dt {
+      color: $darkblue;
+      font-weight: bold;
+      }
+    
+    dd {
+      margin: 0;
+      padding: 0 1%;
+      }
+  

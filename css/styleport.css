@@ -426,3 +426,10 @@ ul.icons li img {
     clear: both;
   }
 }
+/* line 363, ../sass/styleport.scss */
+.mainHeader header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: auto;
+}

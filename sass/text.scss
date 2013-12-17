@@ -1,0 +1,51 @@
+/* Font Properties */
+
+/* Text Settings */
+
+		html
+			{font-family: Verdana, sans-serif;
+			color: $gray;
+			text-align: left;
+			}
+
+		h1, h2, h3, h4, h5, h6 {
+			text-transform: uppercase;
+			font-weight: bold;}
+		
+		a {
+			text-decoration: none;
+			color: $darkblue;
+			}
+		
+		h1 > a {
+			color: inherit;
+			}
+			
+		nav a {
+			text-decoration: none;
+			font-weight: bold;
+			}	
+		
+		.mainHeader nav a{
+			color: $gray;
+			
+			&:hover {
+				color: $white;
+				transition: color 1s ease-in;
+				@include transition(color 1s ease-in);
+				}		
+			}
+			
+		.mainFooter nav a {
+			color: $white;
+			
+			&:hover {
+				color: $darkblue;
+				transition: color 1s ease-in;
+				@include transition(color 1s ease-in);
+				}		
+			}
+			
+		ul
+			{list-style: none;
+			}

@@ -1,0 +1,354 @@
+/* Settings to make the CSS/SCSS easier to build. */
+/*  ------------------
+	Border-Box
+	------------------ */
+/*  http://compass-style.org/examples/compass/css3/box_sizing/ */
+/* line 11, ../sass/cleanhouse.scss */
+.content-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 14, ../sass/cleanhouse.scss */
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*	------------------
+	Transitions
+	------------------ */
+/*	------------------
+	Font-Size
+	------------------ */
+/* 	------------------
+	Micro clearfix
+	------------------ */
+/**
+	 * For modern browsers
+	 * 1. The space content is one way to avoid an Opera bug when the
+	 *    contenteditable attribute is included anywhere else in the document.
+	 *    Otherwise it causes space to appear at the top and bottom of elements
+	 *    that are clearfixed.
+	 * 2. The use of `table` rather than `block` is only necessary if using
+	 *    `:before` to contain the top-margins of child elements.
+	 */
+/* line 49, ../sass/cleanhouse.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 54, ../sass/cleanhouse.scss */
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 63, ../sass/cleanhouse.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* Colors */
+/* Colors */
+/* rgba(101, 101, 101, 0); */
+/* rgba(51, 51, 51, 0);  */
+/* rgba (66, 192, 207, 0); */
+/* rgba(37, 164, 179, 0); */
+/* rgba(255, 255, 255, 0); */
+/* rgba(208, 208, 208, 0); */
+/* Variables */
+/* Breakpoints */
+/* Overall Styles */
+/* Font Size */
+/* line 5, ../sass/base.scss */
+body {
+  font-size: 16px;
+  font-size: 1em;
+  font-size: 1rem;
+}
+
+@media (min-width: 120em) {
+  /* 1920 px */
+  /* line 13, ../sass/base.scss */
+  body {
+    font-size: 20px;
+    font-size: 1.25em;
+    font-size: 1.25rem;
+  }
+}
+/* Body and HTML Colors and Styles */
+/* line 22, ../sass/base.scss */
+html {
+  background-color: #d0d0d0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, ../sass/base.scss */
+body {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  min-width: 25em;
+  /* 400px */
+  padding: 0;
+  margin: 0;
+}
+
+/* Settings for breakpoints */
+@media (min-width: 80em) {
+  /* 1280px */
+  /* line 40, ../sass/base.scss */
+  body {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media (min-width: 120em) {
+  /* 1280px */
+  /* line 47, ../sass/base.scss */
+  body {
+    width: 90%;
+    left: 5%;
+  }
+}
+/* line 53, ../sass/base.scss */
+div.content {
+  position: relative;
+  top: 100px;
+  padding: 0 0 2% 0;
+  margin: 1% 1% 5% 1%;
+}
+
+/* Font Properties */
+/* Text Settings */
+/* line 6, ../sass/text.scss */
+html {
+  font-family: Verdana, sans-serif;
+  color: #656565;
+  text-align: left;
+}
+
+/* line 11, ../sass/text.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 15, ../sass/text.scss */
+a {
+  text-decoration: none;
+  color: #25a4b3;
+}
+
+/* line 20, ../sass/text.scss */
+h1 > a {
+  color: inherit;
+}
+
+/* line 24, ../sass/text.scss */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 29, ../sass/text.scss */
+.mainHeader nav a {
+  color: #656565;
+}
+/* line 32, ../sass/text.scss */
+.mainHeader nav a:hover {
+  color: white;
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  -o-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+
+/* line 39, ../sass/text.scss */
+.mainFooter nav a {
+  color: white;
+}
+/* line 42, ../sass/text.scss */
+.mainFooter nav a:hover {
+  color: #25a4b3;
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  -o-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+
+/* line 50, ../sass/text.scss */
+ul {
+  list-style: none;
+}
+
+/* Main Header, Footer, and Nav */
+/* 	----------------------
+	MAIN HEADER AND FOOTER
+	----------------------
+*/
+/* Main Header and Footer */
+/* line 10, ../sass/nav.scss */
+body > header, footer {
+  background-color: #42c0cf;
+  color: white;
+  text-align: center;
+  padding: .125% 0;
+}
+/* line 14, ../sass/nav.scss */
+body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: inherit;
+}
+/* line 17, ../sass/nav.scss */
+body > header ul li, footer ul li {
+  display: inline;
+}
+
+/* line 22, ../sass/nav.scss */
+h1.mainHeader {
+  text-transform: uppercase;
+  font-size: 200%;
+}
+
+@media (max-width: 30em) {
+  /* line 29, ../sass/nav.scss */
+  p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
+  section h2, .services dt, h2.about {
+    font-size: 125%;
+  }
+
+  /* line 32, ../sass/nav.scss */
+  h1.mainHeader {
+    font-size: 140%;
+  }
+}
+/* line 37, ../sass/nav.scss */
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create fixed header */
+/* line 44, ../sass/nav.scss */
+header.mainHeader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: 0 0 5% 0;
+  z-index: 1000;
+}
+
+/* Navigation */
+/* line 56, ../sass/nav.scss */
+nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 61, ../sass/nav.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 66, ../sass/nav.scss */
+nav ul li {
+  margin: 0;
+  padding: .5em;
+}
+
+/* line 72, ../sass/nav.scss */
+nav.mainFooter {
+  color: #42c0cf;
+}
+
+/* Main Footer */
+/* line 79, ../sass/nav.scss */
+footer.mainFooter {
+  position: static;
+  background: #656565;
+  color: white;
+  text-align: center;
+  margin: 2% 0;
+  padding: 3% 0;
+}
+
+/* 	----------------------
+		SECTIONS
+		----------------------
+	*/
+/* Icons */
+/* line 9, ../sass/sections.scss */
+ul.icons li {
+  display: inline;
+}
+/* line 10, ../sass/sections.scss */
+ul.icons li img {
+  height: 3rem;
+  max-height: 4em;
+}
+
+/* Overall Section Settings */
+/* Sections */
+/* line 20, ../sass/sections.scss */
+section {
+  background-color: white;
+  padding: 0;
+  margin: 1% 0;
+  border-bottom: solid #656565 2em;
+}
+/* line 27, ../sass/sections.scss */
+section h1 {
+  color: #25a4b3;
+  font-size: 2rem;
+}
+
+/* Specific Sections and Asides */
+/* Last Section */
+/* line 37, ../sass/sections.scss */
+section.about {
+  border-bottom: none;
+  margin-bottom: 10%;
+}
+
+/* Tagline */
+/* line 45, ../sass/sections.scss */
+.tagline {
+  display: block;
+  color: #42c0cf;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+}
+
+/* Definition Lists */
+/* line 13, ../sass/cleantheme.scss */
+dl {
+  padding: 1%;
+}
+
+/* line 17, ../sass/cleantheme.scss */
+dt {
+  color: #25a4b3;
+  font-weight: bold;
+}
+
+/* line 22, ../sass/cleantheme.scss */
+dd {
+  margin: 0;
+  padding: 0 1%;
+}
