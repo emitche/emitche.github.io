@@ -78,6 +78,11 @@
 	-------------------
 */
 /* Colors */
+/* rgba(101, 101, 101, 0); */
+/* rgba(51, 51, 51, 0); */
+/* rgba (66, 192, 207, 0); */
+/* rgba(37, 164, 179, 0); */
+/* rgba(255, 255, 255, 0); */
 /* Variables */
 /* 72px */
 /* 	-------------------
@@ -86,7 +91,7 @@
 */
 /* Positioning and General Settings */
 /* Font Size */
-/* line 54, ../sass/styleport.scss */
+/* line 49, ../sass/styleport.scss */
 body {
   font-size: 16px;
   font-size: 1em;
@@ -95,40 +100,36 @@ body {
 
 @media (min-width: 120em) {
   /* 1920 px */
-  /* line 61, ../sass/styleport.scss */
+  /* line 56, ../sass/styleport.scss */
   body {
     font-size: 20px;
     font-size: 1.25em;
     font-size: 1.25rem;
   }
 }
-/* line 68, ../sass/styleport.scss */
+/* line 63, ../sass/styleport.scss */
 html {
-  background-color: rgba(37, 164, 179, 0);
-  background-image: -webkit-gradient(radial, circle, 0, circle, 80, color-stop(10%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(37, 164, 179, 0)));
-  background-image: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0) 10%, rgba(37, 164, 179, 0) 80%);
-  background-image: -moz-radial-gradient(circle, rgba(255, 255, 255, 0) 10%, rgba(37, 164, 179, 0) 80%);
-  background-image: -o-radial-gradient(circle, rgba(255, 255, 255, 0) 10%, rgba(37, 164, 179, 0) 80%);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 10%, rgba(37, 164, 179, 0) 80%);
+  background-color: #25a4b3;
+  /* @include background-image (radial-gradient(circle, $white 10%, $darkblue 80%)); */
   background-size: 24px 24px;
   /* Webkit support */
   background-size: 1.5em 1.5em;
   background-position: 0;
 }
 
-/* line 76, ../sass/styleport.scss */
+/* line 71, ../sass/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
   /* 400px */
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
 }
 
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 86, ../sass/styleport.scss */
+  /* line 81, ../sass/styleport.scss */
   body {
     width: 80%;
     left: 10%;
@@ -136,50 +137,49 @@ body {
 }
 @media (max-width: 30em) {
   /* 480px */
-  /* line 93, ../sass/styleport.scss */
+  /* line 88, ../sass/styleport.scss */
   body {
     min-width: 80%;
   }
 }
 /* Text Settings */
-/* line 101, ../sass/styleport.scss */
+/* line 96, ../sass/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
-  color: rgba(101, 101, 101, 0);
+  color: #656565;
   text-align: left;
-  background-color: white;
 }
 
-/* line 107, ../sass/styleport.scss */
+/* line 101, ../sass/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 111, ../sass/styleport.scss */
+/* line 105, ../sass/styleport.scss */
 a {
   text-decoration: none;
-  color: rgba(37, 164, 179, 0);
+  color: #25a4b3;
 }
 
-/* line 116, ../sass/styleport.scss */
+/* line 110, ../sass/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 120, ../sass/styleport.scss */
+/* line 114, ../sass/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 125, ../sass/styleport.scss */
+/* line 119, ../sass/styleport.scss */
 .mainHeader nav a {
-  color: rgba(101, 101, 101, 0);
+  color: #656565;
 }
-/* line 128, ../sass/styleport.scss */
+/* line 122, ../sass/styleport.scss */
 .mainHeader nav a:hover {
-  color: rgba(255, 255, 255, 0);
+  color: white;
   transition: color 1s ease-in;
   -webkit-transition: color 1s ease-in;
   -moz-transition: color 1s ease-in;
@@ -187,13 +187,13 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 135, ../sass/styleport.scss */
+/* line 129, ../sass/styleport.scss */
 .mainFooter nav a {
-  color: rgba(255, 255, 255, 0);
+  color: white;
 }
-/* line 138, ../sass/styleport.scss */
+/* line 132, ../sass/styleport.scss */
 .mainFooter nav a:hover {
-  color: rgba(37, 164, 179, 0);
+  color: #25a4b3;
   transition: color 1s ease-in;
   -webkit-transition: color 1s ease-in;
   -moz-transition: color 1s ease-in;
@@ -201,7 +201,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 146, ../sass/styleport.scss */
+/* line 140, ../sass/styleport.scss */
 ul {
   list-style: none;
 }
@@ -215,67 +215,67 @@ ul {
 	----------------------
 */
 /* Main Header and Footer */
-/* line 161, ../sass/styleport.scss */
+/* line 155, ../sass/styleport.scss */
 body > header, footer {
-  background-color: rgba 66, 192, 207, 0;
-  color: rgba(255, 255, 255, 0);
+  background-color: #42c0cf;
+  color: white;
   text-align: center;
   padding: 2% 0;
 }
-/* line 165, ../sass/styleport.scss */
+/* line 159, ../sass/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 168, ../sass/styleport.scss */
+/* line 162, ../sass/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 173, ../sass/styleport.scss */
+/* line 167, ../sass/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 200%;
 }
 
 @media (max-width: 30em) {
-  /* line 180, ../sass/styleport.scss */
+  /* line 174, ../sass/styleport.scss */
   p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
 
-  /* line 183, ../sass/styleport.scss */
+  /* line 177, ../sass/styleport.scss */
   h1.mainHeader {
     font-size: 140%;
   }
 }
-/* line 188, ../sass/styleport.scss */
+/* line 182, ../sass/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 195, ../sass/styleport.scss */
+/* line 189, ../sass/styleport.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 200, ../sass/styleport.scss */
+/* line 194, ../sass/styleport.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 205, ../sass/styleport.scss */
+/* line 199, ../sass/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 211, ../sass/styleport.scss */
+/* line 205, ../sass/styleport.scss */
 nav.mainFooter {
-  color: rgba 66, 192, 207, 0;
+  color: #42c0cf;
 }
 
 /* 	----------------------
@@ -284,25 +284,25 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 225, ../sass/styleport.scss */
+/* line 219, ../sass/styleport.scss */
 section {
-  background-color: rgba(255, 255, 255, 0);
-  border-bottom: solid rgba(101, 101, 101, 0) 4.5em;
+  background-color: white;
+  border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 231, ../sass/styleport.scss */
+/* line 225, ../sass/styleport.scss */
 section h1 {
-  color: rgba(37, 164, 179, 0);
+  color: #25a4b3;
   font-size: 2rem;
 }
-/* line 236, ../sass/styleport.scss */
+/* line 230, ../sass/styleport.scss */
 section dt {
-  color: rgba 66, 192, 207, 0;
+  color: #42c0cf;
   font-weight: bold;
   font-size: 1.5rem;
 }
-/* line 242, ../sass/styleport.scss */
+/* line 236, ../sass/styleport.scss */
 section dd {
   margin: 0;
   padding: 0 0 2% 0;
@@ -310,42 +310,42 @@ section dd {
 
 /* Specific Sections and Asides */
 /* Last Section */
-/* line 252, ../sass/styleport.scss */
+/* line 246, ../sass/styleport.scss */
 section.about {
   border-bottom: none;
 }
 
 /* Settings for Other Items */
 /* Main Footer */
-/* line 260, ../sass/styleport.scss */
+/* line 254, ../sass/styleport.scss */
 footer.mainFooter {
-  background: rgba(101, 101, 101, 0);
-  color: rgba(255, 255, 255, 0);
+  background: #656565;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 2% 0;
 }
 
 /* Aside */
-/* line 270, ../sass/styleport.scss */
+/* line 264, ../sass/styleport.scss */
 aside.dev {
-  border-bottom: solid rgba(101, 101, 101, 0) 4.5em;
+  border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
-  background-color: rgba 66, 192, 207, 0;
-  color: rgba(255, 255, 255, 0);
+  background-color: #42c0cf;
+  color: white;
 }
-/* line 278, ../sass/styleport.scss */
+/* line 272, ../sass/styleport.scss */
 aside.dev h1 {
-  color: rgba(255, 255, 255, 0);
+  color: white;
   font-size: 1.5rem;
 }
 
 /* Tagline */
-/* line 286, ../sass/styleport.scss */
+/* line 280, ../sass/styleport.scss */
 .tagline {
-  color: rgba 66, 192, 207, 0;
-  background-color: rgba(255, 255, 255, 0);
+  color: #42c0cf;
+  background-color: white;
   font-size: 1.5rem;
   margin: 0;
   padding: 1% 2% 0 2%;
@@ -354,7 +354,7 @@ aside.dev h1 {
 
 @media (min-width: 30em) {
   /* 480px */
-  /* line 296, ../sass/styleport.scss */
+  /* line 290, ../sass/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -363,12 +363,12 @@ aside.dev h1 {
 }
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 304, ../sass/styleport.scss */
+  /* line 298, ../sass/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 
-  /* line 308, ../sass/styleport.scss */
+  /* line 302, ../sass/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -378,30 +378,30 @@ aside.dev h1 {
   }
 }
 /* Icons */
-/* line 321, ../sass/styleport.scss */
+/* line 315, ../sass/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 322, ../sass/styleport.scss */
+/* line 316, ../sass/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
 }
 
 /* Work */
-/* line 330, ../sass/styleport.scss */
+/* line 324, ../sass/styleport.scss */
 .samples dd {
   padding: 0;
 }
 
-/* line 334, ../sass/styleport.scss */
+/* line 328, ../sass/styleport.scss */
 .samples dt {
   padding: 2% 0 0 0;
 }
 
 @media (min-width: 47em) {
   /* 752 px */
-  /* line 340, ../sass/styleport.scss */
+  /* line 334, ../sass/styleport.scss */
   dl.samples dt:before {
     content: url(../images/projects/daisy3.png);
     width: 2%;
@@ -413,7 +413,7 @@ ul.icons li img {
     left: -20%;
   }
 
-  /* line 351, ../sass/styleport.scss */
+  /* line 345, ../sass/styleport.scss */
   dl.samples dd, dl.samples dt {
     position: relative;
     left: 15%;
