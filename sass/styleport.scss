@@ -59,23 +59,22 @@
 				font-size: 1.25rem;
 				}
 				}
-			
-   
-    /* Polka dot background */
     
 		html {
       
       /* Set fallback color */
 			background-color: $darkblue;
-     
-      /* Circle radial gradient */
-			@include background-image (radial-gradient(circle, $darkblue 30px, $white 30px));
       
-      /* Specify spacing between circles. */
-			background-size: 80px 88px; /* Webkit support */
-			background-size: 5em 5.5em;
+        /* Polka dot background */
       
-			background-position: 0;
+        /* Circle radial gradient */
+        /* @include background-image (radial-gradient(circle, $darkblue 30px, $white 30px)); */
+                  
+        /* Specify spacing between circles. */
+        /* background-size: 80px 88px; */   /* Webkit support */
+        /* background-size: 5em 5.5em; */
+                  
+        /* background-position: 0; */
 			}
 		
 		body {
