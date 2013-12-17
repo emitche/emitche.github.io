@@ -70,7 +70,7 @@
 /* Breakpoints */
 /* Overall Styles */
 /* Font Size */
-/* line 5, ../sass/base.scss */
+/* line 5, ../sass/_base.scss */
 body {
   font-size: 16px;
   font-size: 1em;
@@ -79,7 +79,7 @@ body {
 
 @media (min-width: 120em) {
   /* 1920 px */
-  /* line 13, ../sass/base.scss */
+  /* line 13, ../sass/_base.scss */
   body {
     font-size: 20px;
     font-size: 1.25em;
@@ -87,14 +87,14 @@ body {
   }
 }
 /* Body and HTML Colors and Styles */
-/* line 22, ../sass/base.scss */
+/* line 22, ../sass/_base.scss */
 html {
   background-color: #d0d0d0;
   margin: 0;
   padding: 0;
 }
 
-/* line 28, ../sass/base.scss */
+/* line 28, ../sass/_base.scss */
 body {
   position: relative;
   width: 100%;
@@ -108,7 +108,7 @@ body {
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 40, ../sass/base.scss */
+  /* line 40, ../sass/_base.scss */
   body {
     width: 90%;
     left: 5%;
@@ -116,57 +116,64 @@ body {
 }
 @media (min-width: 120em) {
   /* 1280px */
-  /* line 47, ../sass/base.scss */
+  /* line 47, ../sass/_base.scss */
   body {
     width: 90%;
     left: 5%;
   }
 }
-/* line 53, ../sass/base.scss */
+/* Content div for fixed header */
+/*
+    div.content {
+      position: relative;
+      top: 100px;
+      padding: 0 0 2% 0;
+      margin: 1% 1% 5% 1%;
+      }
+*/
+/* line 64, ../sass/_base.scss */
 div.content {
-  position: relative;
-  top: 100px;
-  padding: 0 0 2% 0;
-  margin: 1% 1% 5% 1%;
+  padding: 0;
+  margin: 1% 0;
 }
 
 /* Font Properties */
 /* Text Settings */
-/* line 6, ../sass/text.scss */
+/* line 6, ../sass/_text.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
   text-align: left;
 }
 
-/* line 11, ../sass/text.scss */
+/* line 11, ../sass/_text.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 15, ../sass/text.scss */
+/* line 15, ../sass/_text.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 20, ../sass/text.scss */
+/* line 20, ../sass/_text.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 24, ../sass/text.scss */
+/* line 24, ../sass/_text.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 29, ../sass/text.scss */
+/* line 29, ../sass/_text.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 32, ../sass/text.scss */
+/* line 32, ../sass/_text.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -176,11 +183,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 39, ../sass/text.scss */
+/* line 39, ../sass/_text.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 42, ../sass/text.scss */
+/* line 42, ../sass/_text.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -190,7 +197,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 50, ../sass/text.scss */
+/* line 50, ../sass/_text.scss */
 ul {
   list-style: none;
 }
@@ -201,82 +208,81 @@ ul {
 	----------------------
 */
 /* Main Header and Footer */
-/* line 10, ../sass/nav.scss */
+/* line 10, ../sass/_nav.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: .125% 0;
 }
-/* line 14, ../sass/nav.scss */
+/* line 14, ../sass/_nav.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 17, ../sass/nav.scss */
+/* line 17, ../sass/_nav.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 22, ../sass/nav.scss */
+/* line 22, ../sass/_nav.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 200%;
 }
 
 @media (max-width: 30em) {
-  /* line 29, ../sass/nav.scss */
+  /* line 29, ../sass/_nav.scss */
   p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
 
-  /* line 32, ../sass/nav.scss */
+  /* line 32, ../sass/_nav.scss */
   h1.mainHeader {
     font-size: 140%;
   }
 }
-/* line 37, ../sass/nav.scss */
+/* line 37, ../sass/_nav.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Create fixed header */
-/* line 44, ../sass/nav.scss */
-header.mainHeader {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  margin: 0 0 5% 0;
-  z-index: 1000;
-}
-
+/*    header.mainHeader {
+      position: fixed;
+      top: 0px;
+      left:0px;
+      width: 100%;
+      margin: 0 0 5% 0;
+      z-index: 1000;
+      }
+*/
 /* Navigation */
-/* line 56, ../sass/nav.scss */
+/* line 56, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 61, ../sass/nav.scss */
+/* line 61, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 66, ../sass/nav.scss */
+/* line 66, ../sass/_nav.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 72, ../sass/nav.scss */
+/* line 72, ../sass/_nav.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
 
 /* Main Footer */
-/* line 79, ../sass/nav.scss */
+/* line 79, ../sass/_nav.scss */
 footer.mainFooter {
   position: static;
   background: #656565;
@@ -291,11 +297,11 @@ footer.mainFooter {
 		----------------------
 	*/
 /* Icons */
-/* line 9, ../sass/sections.scss */
+/* line 9, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 10, ../sass/sections.scss */
+/* line 10, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
@@ -303,14 +309,14 @@ ul.icons li img {
 
 /* Overall Section Settings */
 /* Sections */
-/* line 20, ../sass/sections.scss */
+/* line 20, ../sass/_sections.scss */
 section {
   background-color: white;
   padding: 0;
   margin: 1% 0;
-  border-bottom: solid #656565 2em;
+  /*      border-bottom: $grayBlock; */
 }
-/* line 27, ../sass/sections.scss */
+/* line 27, ../sass/_sections.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
@@ -318,14 +324,14 @@ section h1 {
 
 /* Specific Sections and Asides */
 /* Last Section */
-/* line 37, ../sass/sections.scss */
+/* line 37, ../sass/_sections.scss */
 section.about {
   border-bottom: none;
   margin-bottom: 10%;
 }
 
 /* Tagline */
-/* line 45, ../sass/sections.scss */
+/* line 45, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -333,6 +339,31 @@ section.about {
   margin: 0;
   padding: 2%;
   text-align: center;
+}
+
+/* Quick Restyling of Sections */
+  /* Option 1
+
+    section h1 {
+      text-align: center;
+      background-color: $gray2;
+      padding: 1%;
+      height: 100%;
+    }
+  */
+/* Option 2 */
+/* line 83, ../sass/_sections.scss */
+section h1 {
+  text-align: center;
+  background-color: #656565;
+  color: white;
+  padding: 1%;
+  height: 100%;
+}
+
+/* line 91, ../sass/_sections.scss */
+section h2, section p {
+  margin-left: 1%;
 }
 
 /* Definition Lists */
@@ -350,5 +381,5 @@ dt {
 /* line 22, ../sass/cleantheme.scss */
 dd {
   margin: 0;
-  padding: 0 1%;
+  padding: 0 2%;
 }

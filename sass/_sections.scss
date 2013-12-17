@@ -22,7 +22,7 @@
 				padding: 0;
 				margin: 1% 0;
         
-        border-bottom: $grayBlock;
+  /*      border-bottom: $grayBlock; */
 				
 				h1 {
 				color: $darkblue;
@@ -64,3 +64,31 @@
 	//				padding: 2% 20% 2 20%;
 	//				}
 	//			}   
+  
+  
+  /* Quick Restyling of Sections */
+  
+    /* Option 1
+  
+      section h1 {
+        text-align: center;
+        background-color: $gray2;
+        padding: 1%;
+        height: 100%;
+      }
+    */
+    
+    /* Option 2 */
+  
+      section h1 {
+        text-align: center;
+        background-color: $gray;
+        color: white;
+        padding: 1%;
+        height: 100%;
+      }
+      
+  section h2, section p {
+    margin-left: 1%;
+    }
+      
