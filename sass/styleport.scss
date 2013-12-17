@@ -26,11 +26,16 @@
 */
 	
 	/* Colors */
-		$gray: #656565;			/* rgba(101, 101, 101, 0); */
-		$black: #333;			/* rgba (51, 51, 51, 0); */
-		$blue: #42c0cf;			/* rgba (66, 192, 207, 0); */
-		$darkblue: #25a4b3;		/* rgba (37, 164, 2179, 0); */
-		$white: white; 			/* rgba(255, 255, 255, 0); */
+		$gray: #656565;
+    $gray: rgba(101, 101, 101, 0);
+		$black: #333;			
+    $black: rgba(51, 51, 51, 0);
+		$blue: #42c0cf;
+    $blue: rgba (66, 192, 207, 0);
+		$darkblue: #25a4b3;
+    $darkblue: rgba(37, 164, 179, 0);
+		$white: white;
+    $white: rgba(255, 255, 255, 0);
 
 		
 	/* Variables */
