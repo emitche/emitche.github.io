@@ -79,10 +79,11 @@
 */
 /* Colors */
 /* rgba(101, 101, 101, 0); */
-/* rgba(51, 51, 51, 0); */
+/* rgba(51, 51, 51, 0);  */
 /* rgba (66, 192, 207, 0); */
 /* rgba(37, 164, 179, 0); */
 /* rgba(255, 255, 255, 0); */
+/* rgba(208, 208, 208, 0); */
 /* Variables */
 /* 72px */
 /* 	-------------------
@@ -91,7 +92,7 @@
 */
 /* Positioning and General Settings */
 /* Font Size */
-/* line 49, ../sass/styleport.scss */
+/* line 50, ../sass/styleport.scss */
 body {
   font-size: 16px;
   font-size: 1em;
@@ -100,17 +101,17 @@ body {
 
 @media (min-width: 120em) {
   /* 1920 px */
-  /* line 56, ../sass/styleport.scss */
+  /* line 57, ../sass/styleport.scss */
   body {
     font-size: 20px;
     font-size: 1.25em;
     font-size: 1.25rem;
   }
 }
-/* line 63, ../sass/styleport.scss */
+/* line 64, ../sass/styleport.scss */
 html {
   /* Set fallback color */
-  background-color: #25a4b3;
+  background-color: #d0d0d0;
   /* Polka dot background */
   /* Circle radial gradient */
   /* @include background-image (radial-gradient(circle, $darkblue 30px, $white 30px)); */
@@ -121,7 +122,7 @@ html {
   /* background-position: 0; */
 }
 
-/* line 80, ../sass/styleport.scss */
+/* line 81, ../sass/styleport.scss */
 body {
   position: relative;
   min-width: 25em;
@@ -133,7 +134,7 @@ body {
 /* Settings for breakpoints */
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 90, ../sass/styleport.scss */
+  /* line 91, ../sass/styleport.scss */
   body {
     width: 80%;
     left: 10%;
@@ -141,47 +142,47 @@ body {
 }
 @media (max-width: 30em) {
   /* 480px */
-  /* line 97, ../sass/styleport.scss */
+  /* line 98, ../sass/styleport.scss */
   body {
     min-width: 80%;
   }
 }
 /* Text Settings */
-/* line 105, ../sass/styleport.scss */
+/* line 106, ../sass/styleport.scss */
 html {
   font-family: Verdana, sans-serif;
   color: #656565;
   text-align: left;
 }
 
-/* line 110, ../sass/styleport.scss */
+/* line 111, ../sass/styleport.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 114, ../sass/styleport.scss */
+/* line 115, ../sass/styleport.scss */
 a {
   text-decoration: none;
   color: #25a4b3;
 }
 
-/* line 119, ../sass/styleport.scss */
+/* line 120, ../sass/styleport.scss */
 h1 > a {
   color: inherit;
 }
 
-/* line 123, ../sass/styleport.scss */
+/* line 124, ../sass/styleport.scss */
 nav a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 128, ../sass/styleport.scss */
+/* line 129, ../sass/styleport.scss */
 .mainHeader nav a {
   color: #656565;
 }
-/* line 131, ../sass/styleport.scss */
+/* line 132, ../sass/styleport.scss */
 .mainHeader nav a:hover {
   color: white;
   transition: color 1s ease-in;
@@ -191,11 +192,11 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 138, ../sass/styleport.scss */
+/* line 139, ../sass/styleport.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 141, ../sass/styleport.scss */
+/* line 142, ../sass/styleport.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -205,7 +206,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 149, ../sass/styleport.scss */
+/* line 150, ../sass/styleport.scss */
 ul {
   list-style: none;
 }
@@ -219,65 +220,65 @@ ul {
 	----------------------
 */
 /* Main Header and Footer */
-/* line 164, ../sass/styleport.scss */
+/* line 165, ../sass/styleport.scss */
 body > header, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
-  padding: 2% 0;
+  padding: .5% 0;
 }
-/* line 168, ../sass/styleport.scss */
+/* line 169, ../sass/styleport.scss */
 body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 171, ../sass/styleport.scss */
+/* line 172, ../sass/styleport.scss */
 body > header ul li, footer ul li {
   display: inline;
 }
 
-/* line 176, ../sass/styleport.scss */
+/* line 177, ../sass/styleport.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 200%;
 }
 
 @media (max-width: 30em) {
-  /* line 183, ../sass/styleport.scss */
+  /* line 184, ../sass/styleport.scss */
   p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
   section h2, .services dt, h2.about {
     font-size: 125%;
   }
 
-  /* line 186, ../sass/styleport.scss */
+  /* line 187, ../sass/styleport.scss */
   h1.mainHeader {
     font-size: 140%;
   }
 }
-/* line 191, ../sass/styleport.scss */
+/* line 192, ../sass/styleport.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 /* Navigation */
-/* line 198, ../sass/styleport.scss */
+/* line 199, ../sass/styleport.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 203, ../sass/styleport.scss */
+/* line 204, ../sass/styleport.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 208, ../sass/styleport.scss */
+/* line 209, ../sass/styleport.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 214, ../sass/styleport.scss */
+/* line 215, ../sass/styleport.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
@@ -288,25 +289,25 @@ nav.mainFooter {
 */
 /* Overall Section Settings */
 /* Sections */
-/* line 228, ../sass/styleport.scss */
+/* line 229, ../sass/styleport.scss */
 section {
   background-color: white;
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
   margin: 0;
 }
-/* line 234, ../sass/styleport.scss */
+/* line 235, ../sass/styleport.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
-/* line 239, ../sass/styleport.scss */
+/* line 240, ../sass/styleport.scss */
 section dt {
   color: #42c0cf;
   font-weight: bold;
   font-size: 1.5rem;
 }
-/* line 245, ../sass/styleport.scss */
+/* line 246, ../sass/styleport.scss */
 section dd {
   margin: 0;
   padding: 0 0 2% 0;
@@ -314,14 +315,14 @@ section dd {
 
 /* Specific Sections and Asides */
 /* Last Section */
-/* line 255, ../sass/styleport.scss */
+/* line 256, ../sass/styleport.scss */
 section.about {
   border-bottom: none;
 }
 
 /* Settings for Other Items */
 /* Main Footer */
-/* line 263, ../sass/styleport.scss */
+/* line 264, ../sass/styleport.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -331,7 +332,7 @@ footer.mainFooter {
 }
 
 /* Aside */
-/* line 273, ../sass/styleport.scss */
+/* line 274, ../sass/styleport.scss */
 aside.dev {
   border-bottom: solid #656565 4.5em;
   padding: 5% 5%;
@@ -339,14 +340,14 @@ aside.dev {
   background-color: #42c0cf;
   color: white;
 }
-/* line 281, ../sass/styleport.scss */
+/* line 282, ../sass/styleport.scss */
 aside.dev h1 {
   color: white;
   font-size: 1.5rem;
 }
 
 /* Tagline */
-/* line 289, ../sass/styleport.scss */
+/* line 290, ../sass/styleport.scss */
 .tagline {
   color: #42c0cf;
   background-color: white;
@@ -358,7 +359,7 @@ aside.dev h1 {
 
 @media (min-width: 30em) {
   /* 480px */
-  /* line 299, ../sass/styleport.scss */
+  /* line 300, ../sass/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -367,12 +368,12 @@ aside.dev h1 {
 }
 @media (min-width: 80em) {
   /* 1280px */
-  /* line 307, ../sass/styleport.scss */
+  /* line 308, ../sass/styleport.scss */
   .tagline {
     padding: 1% 20% 0 20%;
   }
 
-  /* line 311, ../sass/styleport.scss */
+  /* line 312, ../sass/styleport.scss */
   p.tagline:before {
     content: url(../images/projects/daisy3.png);
     display: inline-block;
@@ -382,30 +383,30 @@ aside.dev h1 {
   }
 }
 /* Icons */
-/* line 324, ../sass/styleport.scss */
+/* line 325, ../sass/styleport.scss */
 ul.icons li {
   display: inline;
 }
-/* line 325, ../sass/styleport.scss */
+/* line 326, ../sass/styleport.scss */
 ul.icons li img {
   height: 3rem;
   max-height: 4em;
 }
 
 /* Work */
-/* line 333, ../sass/styleport.scss */
+/* line 334, ../sass/styleport.scss */
 .samples dd {
   padding: 0;
 }
 
-/* line 337, ../sass/styleport.scss */
+/* line 338, ../sass/styleport.scss */
 .samples dt {
   padding: 2% 0 0 0;
 }
 
 @media (min-width: 47em) {
   /* 752 px */
-  /* line 343, ../sass/styleport.scss */
+  /* line 344, ../sass/styleport.scss */
   dl.samples dt:before {
     content: url(../images/projects/daisy3.png);
     width: 2%;
@@ -417,7 +418,7 @@ ul.icons li img {
     left: -20%;
   }
 
-  /* line 354, ../sass/styleport.scss */
+  /* line 355, ../sass/styleport.scss */
   dl.samples dd, dl.samples dt {
     position: relative;
     left: 15%;

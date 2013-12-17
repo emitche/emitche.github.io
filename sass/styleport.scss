@@ -27,10 +27,11 @@
 	
 	/* Colors */
 		$gray: #656565;     /* rgba(101, 101, 101, 0); */
-		$black: #333;			  /* rgba(51, 51, 51, 0); */
+		$black: #333;			  /* rgba(51, 51, 51, 0);  */
 		$blue: #42c0cf;     /* rgba (66, 192, 207, 0); */
 		$darkblue: #25a4b3; /* rgba(37, 164, 179, 0); */
 		$white: white;      /* rgba(255, 255, 255, 0); */
+    $gray2: #d0d0d0;    /* rgba(208, 208, 208, 0); */
 
 		
 	/* Variables */
@@ -63,7 +64,7 @@
 		html {
       
       /* Set fallback color */
-			background-color: $darkblue;
+			background-color: $gray2;
       
         /* Polka dot background */
       
@@ -170,7 +171,7 @@
 					}
 				ul li {display: inline;
 					}
-				padding: 2% 0;
+				padding: .5% 0;
 				}
 					
 			h1.mainHeader {
