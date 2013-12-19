@@ -6,8 +6,12 @@ $grayBlock:	solid $gray 2em;
 
 /* Breakpoints */
 
-$xsmall: '400px';
-$small: '30em';
-$tablet: '60em';
-$medium: '80em';
-$large: '120em';
+$xsmall: 320px;
+$small: 720px;
+$tablet: 1150px;
+$medium: 1300px;
+$large: 1920px;
+
+$mqtype: width;
+
+// 120 80 60 30 40px

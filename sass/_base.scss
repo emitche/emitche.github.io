@@ -8,7 +8,7 @@
       font-size: 1rem;
       }
     
-    @media (min-width:120em) {	
+    @media (min-width:$large) {	
       body {
         font-size: 20px;
         font-size: 1.25em;
@@ -33,14 +33,14 @@
 				
 		/* Settings for breakpoints */
 	
-      @media (min-width:80em) {
+      @media (min-width:$medium) {
 				body {
 					width: 90%;
           margin: 0 5%;
 					}
 				}
         
-      @media (min-width:120em) {
+      @media (min-width:$large) {
 				body {
 					width: 80%;
           margin: 0 10%;
