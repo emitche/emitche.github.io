@@ -248,49 +248,40 @@ footer {
     top: 0px;
   }
 }
-/* Create fixed header */
-/*    header.mainHeader {
-      position: fixed;
-      top: 0px;
-      left:0px;
-      width: 100%;
-      margin: 0 0 5% 0;
-      z-index: 1000;
-      }
-*/
-/*
-      header.mainHeader {
-      position: fixed;
-      left: 0px;
-      width: 100%;
-      top: 0px;
-      }
-*/
+@media (min-width: 120em) {
+  /* line 53, ../sass/_nav.scss */
+  header.mainHeader {
+    position: relative;
+    left: -18%;
+    width: 138%;
+    top: 0px;
+  }
+}
 /* Navigation */
-/* line 76, ../sass/_nav.scss */
+/* line 63, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 81, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 86, ../sass/_nav.scss */
+/* line 73, ../sass/_nav.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 92, ../sass/_nav.scss */
+/* line 79, ../sass/_nav.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
 
 /* Main Footer */
-/* line 99, ../sass/_nav.scss */
+/* line 86, ../sass/_nav.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
