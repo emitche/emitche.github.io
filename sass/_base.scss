@@ -9,7 +9,6 @@
       }
     
     @media (min-width:120em) {	
-      /* 1920 px */
       body {
         font-size: 20px;
         font-size: 1.25em;
@@ -26,27 +25,25 @@
       }
       
     body {
-			position: relative;
 			width: 100%;
 			background-color: $white;
-      min-width: 25em; 		/* 400px */
       padding: 0;
       margin: 0;
 			}
 				
 		/* Settings for breakpoints */
 	
-      @media (min-width:80em) {	/* 1280px */
+      @media (min-width:80em) {
 				body {
 					width: 90%;
-          left: 5%;
+          margin: 0 5%;
 					}
 				}
         
-      @media (min-width:120em) {	/* 1280px */
+      @media (min-width:120em) {
 				body {
-					width: 90%;
-          left: 5%;
+					width: 80%;
+          margin: 0 10%;
 					}
 				}
     
@@ -56,12 +53,16 @@
     div.content {
       position: relative;
       top: 100px;
-      padding: 0 0 2% 0;
-      margin: 1% 1% 5% 1%;
+      padding: 0 0 0 0;
+      margin: 1% 1% 1% 1%;
       }
 */
 
-    div.content {
-      padding: 0;
-      margin: 1% 0;
+    @media (min-width: $small) {
+      div.content {
+        padding: 2%;
+        margin: 0;
+        background-color: inherit;
+        display: block;
       }
+    }

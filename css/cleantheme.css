@@ -78,8 +78,7 @@ body {
 }
 
 @media (min-width: 120em) {
-  /* 1920 px */
-  /* line 13, ../sass/_base.scss */
+  /* line 12, ../sass/_base.scss */
   body {
     font-size: 20px;
     font-size: 1.25em;
@@ -87,39 +86,34 @@ body {
   }
 }
 /* Body and HTML Colors and Styles */
-/* line 22, ../sass/_base.scss */
+/* line 21, ../sass/_base.scss */
 html {
   background-color: #d0d0d0;
   margin: 0;
   padding: 0;
 }
 
-/* line 28, ../sass/_base.scss */
+/* line 27, ../sass/_base.scss */
 body {
-  position: relative;
   width: 100%;
   background-color: white;
-  min-width: 25em;
-  /* 400px */
   padding: 0;
   margin: 0;
 }
 
 /* Settings for breakpoints */
 @media (min-width: 80em) {
-  /* 1280px */
-  /* line 40, ../sass/_base.scss */
+  /* line 37, ../sass/_base.scss */
   body {
     width: 90%;
-    left: 5%;
+    margin: 0 5%;
   }
 }
 @media (min-width: 120em) {
-  /* 1280px */
-  /* line 47, ../sass/_base.scss */
+  /* line 44, ../sass/_base.scss */
   body {
-    width: 90%;
-    left: 5%;
+    width: 80%;
+    margin: 0 10%;
   }
 }
 /* Content div for fixed header */
@@ -127,16 +121,19 @@ body {
     div.content {
       position: relative;
       top: 100px;
-      padding: 0 0 2% 0;
-      margin: 1% 1% 5% 1%;
+      padding: 0 0 0 0;
+      margin: 1% 1% 1% 1%;
       }
 */
-/* line 64, ../sass/_base.scss */
-div.content {
-  padding: 0;
-  margin: 1% 0;
+@media (min-width: 30em) {
+  /* line 62, ../sass/_base.scss */
+  div.content {
+    padding: 2%;
+    margin: 0;
+    background-color: inherit;
+    display: block;
+  }
 }
-
 /* Font Properties */
 /* Text Settings */
 /* line 6, ../sass/_text.scss */
@@ -209,45 +206,48 @@ ul {
 */
 /* Main Header and Footer */
 /* line 10, ../sass/_nav.scss */
-body > header, footer {
+header.mainHeader, footer {
   background-color: #42c0cf;
   color: white;
   text-align: center;
   padding: .125% 0;
 }
-/* line 14, ../sass/_nav.scss */
-body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+/* line 16, ../sass/_nav.scss */
+header.mainHeader h1, header.mainHeader h2, header.mainHeader h3, header.mainHeader h4, header.mainHeader h5, header.mainHeader h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: inherit;
 }
-/* line 17, ../sass/_nav.scss */
-body > header ul li, footer ul li {
+/* line 20, ../sass/_nav.scss */
+header.mainHeader ul li, footer ul li {
   display: inline;
 }
 
-/* line 22, ../sass/_nav.scss */
+/* line 26, ../sass/_nav.scss */
 h1.mainHeader {
   text-transform: uppercase;
   font-size: 200%;
 }
 
 @media (max-width: 30em) {
-  /* line 29, ../sass/_nav.scss */
-  p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact,
-  section h2, .services dt, h2.about {
-    font-size: 125%;
-  }
-
-  /* line 32, ../sass/_nav.scss */
+  /* line 33, ../sass/_nav.scss */
   h1.mainHeader {
     font-size: 140%;
   }
 }
-/* line 37, ../sass/_nav.scss */
+/* line 38, ../sass/_nav.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
+@media (min-width: 80em) {
+  /* line 44, ../sass/_nav.scss */
+  header.mainHeader {
+    position: relative;
+    left: -6%;
+    width: 112%;
+    top: 0px;
+  }
+}
 /* Create fixed header */
 /*    header.mainHeader {
       position: fixed;
@@ -258,127 +258,155 @@ footer {
       z-index: 1000;
       }
 */
+/*
+      header.mainHeader {
+      position: fixed;
+      left: 0px;
+      width: 100%;
+      top: 0px;
+      }
+*/
 /* Navigation */
-/* line 56, ../sass/_nav.scss */
+/* line 76, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 61, ../sass/_nav.scss */
+/* line 81, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 66, ../sass/_nav.scss */
+/* line 86, ../sass/_nav.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 72, ../sass/_nav.scss */
+/* line 92, ../sass/_nav.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
 
 /* Main Footer */
-/* line 79, ../sass/_nav.scss */
+/* line 99, ../sass/_nav.scss */
 footer.mainFooter {
-  position: static;
   background: #656565;
   color: white;
   text-align: center;
   margin: 2% 0;
   padding: 3% 0;
+  display: block;
+  clear: both;
 }
 
 /* 	----------------------
 		SECTIONS
 		----------------------
 	*/
-/* Icons */
-/* line 9, ../sass/_sections.scss */
-ul.icons li {
-  display: inline;
-}
-/* line 10, ../sass/_sections.scss */
-ul.icons li img {
-  height: 3rem;
-  max-height: 4em;
-}
-
-/* Overall Section Settings */
 /* Sections */
-/* line 20, ../sass/_sections.scss */
+/* line 9, ../sass/_sections.scss */
 section {
   background-color: white;
   padding: 0;
-  margin: 1% 0;
-  /*      border-bottom: $grayBlock; */
+  margin: 0;
 }
-/* line 27, ../sass/_sections.scss */
+/* line 14, ../sass/_sections.scss */
 section h1 {
   color: #25a4b3;
   font-size: 2rem;
 }
 
-/* Specific Sections and Asides */
-/* Last Section */
-/* line 37, ../sass/_sections.scss */
-section.about {
-  border-bottom: none;
-  margin-bottom: 10%;
+@media (max-width: 30em) {
+  /* line 22, ../sass/_sections.scss */
+  section h1 {
+    text-align: center;
+    background-color: #656565;
+    color: white;
+    padding: 1%;
+    margin: 0;
+    width: 98%;
+    font-size: 1rem;
+  }
 }
+@media (min-width: 30em) {
+  /* line 34, ../sass/_sections.scss */
+  section {
+    padding: 1% 0 2% 0;
+  }
+}
+@media (min-width: 60em) {
+  /* line 41, ../sass/_sections.scss */
+  section {
+    padding: 1%;
+    margin: 1%;
+  }
 
+  /* line 46, ../sass/_sections.scss */
+  section {
+    border: solid #d0d0d0 0.125em;
+    background-color: rgba(208, 208, 208, 0.25);
+  }
+
+  /* line 51, ../sass/_sections.scss */
+  section.what, section.about {
+    float: left;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+  }
+
+  /* line 58, ../sass/_sections.scss */
+  section.work {
+    float: right;
+    width: 60%;
+    position: relative;
+    display: inline-block;
+  }
+}
 /* Tagline */
-/* line 45, ../sass/_sections.scss */
+/* line 69, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
   font-size: 1.5rem;
   margin: 0;
-  padding: 2%;
-  text-align: center;
-}
-
-/* Quick Restyling of Sections */
-  /* Option 1
-
-    section h1 {
-      text-align: center;
-      background-color: $gray2;
-      padding: 1%;
-      height: 100%;
-    }
-  */
-/* Option 2 */
-/* line 83, ../sass/_sections.scss */
-section h1 {
-  text-align: center;
-  background-color: #656565;
-  color: white;
   padding: 1%;
-  height: 100%;
+  text-align: center;
 }
 
-/* line 91, ../sass/_sections.scss */
-section h2, section p {
-  margin-left: 1%;
+@media (max-width: 30em) {
+  /* line 79, ../sass/_sections.scss */
+  .tagline {
+    padding: 1%;
+    font-size: 125%;
+  }
+}
+/* Icons */
+/* line 87, ../sass/_sections.scss */
+ul.icons li {
+  display: inline;
+}
+/* line 90, ../sass/_sections.scss */
+ul.icons li img {
+  height: 3rem;
+  max-height: 4em;
 }
 
 /* Definition Lists */
-/* line 13, ../sass/cleantheme.scss */
+/* line 14, ../sass/cleantheme.scss */
 dl {
   padding: 1%;
 }
 
-/* line 17, ../sass/cleantheme.scss */
+/* line 18, ../sass/cleantheme.scss */
 dt {
   color: #25a4b3;
   font-weight: bold;
 }
 
-/* line 22, ../sass/cleantheme.scss */
+/* line 23, ../sass/cleantheme.scss */
 dd {
   margin: 0;
   padding: 0 2%;

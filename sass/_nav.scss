@@ -7,39 +7,49 @@
 
 		/* Main Header and Footer */
 		
-			body > header, footer {
+			header.mainHeader, footer {
 				background-color: $blue;
 				color: $white;
 				text-align: center;
-				h1, h2, h3, h4, h5, h6 {
+        padding: .125% 0;
+				
+        h1, h2, h3, h4, h5, h6 {
 					color: inherit;
-					}
-				ul li {display: inline;
-					}
-				padding: .125% 0;
 				}
+        
+				ul li {
+          display: inline;
+				}
+          
+			}
 					
 			h1.mainHeader {
 				text-transform: uppercase;
 				font-size: 200%;
-				}
+			}
 				
-			@media (max-width:30em) {
-				p.tagline, h1.what, aside.dev h1.dev, h1.about, h1.contact, 
-				section h2, .services dt, h2.about {
-						font-size: 125%;
-						}
+      @media (max-width:$small) {
+
 				h1.mainHeader {
-						font-size: 140%;
-						}
+					font-size: 140%;
 				}
-			
+			}
+
 			footer {
 				margin: 0;
 				padding: 0;
-				}
-        
-    /* Create fixed header */
+			}
+
+    @media (min-width:$medium)   {
+     header.mainHeader {
+        position: relative;
+        left: -6%;
+        width: 112%;
+        top: 0px;
+      }
+		}
+    
+        /* Create fixed header */
     
 /*    header.mainHeader {
       position: fixed;
@@ -50,7 +60,17 @@
       z-index: 1000;
       }
 */     
-				
+
+/*
+      header.mainHeader {
+      position: fixed;
+      left: 0px;
+      width: 100%;
+      top: 0px;
+      }
+*/      
+     
+    
 		/* Navigation */
 		
 			nav {
@@ -67,21 +87,21 @@
 						margin: 0;
 						padding: .5em;
 						}
-				}
-		
+			}
+      
 			nav.mainFooter {
 				color: $blue;
-				}
+      }
         
     
 			/* Main Footer */
 			
 			footer.mainFooter {
-      position: static;
-			background: $gray;
-			color: $white;
-			text-align: center;
-			margin: 2% 0;
-			padding: 3% 0;
-      
-			}
+        background: $gray;
+        color: $white;
+        text-align: center;
+        margin: 2% 0;
+        padding: 3% 0;
+        display: block;
+        clear: both;
+      }
