@@ -124,7 +124,7 @@ body {
       margin: 1% 1% 1% 1%;
       }
 */
-@media (min-width: 800px) {
+@media (min-width: 767px) {
   /* line 62, ../sass/_base.scss */
   div.content {
     padding: 2%;
@@ -226,7 +226,7 @@ h1.mainHeader {
   font-size: 200%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   /* line 33, ../sass/_nav.scss */
   h1.mainHeader {
     font-size: 140%;
@@ -308,7 +308,7 @@ section h1 {
   font-size: 2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   /* line 22, ../sass/_sections.scss */
   section h1 {
     text-align: center;
@@ -320,7 +320,7 @@ section h1 {
     font-size: 1rem;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 767px) {
   /* line 34, ../sass/_sections.scss */
   section {
     padding: 1% 0 2% 0;
@@ -366,7 +366,7 @@ section h1 {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   /* line 79, ../sass/_sections.scss */
   .tagline {
     padding: 1%;
