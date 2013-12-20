@@ -1,0 +1,176 @@
+﻿html {
+  background-color: black;
+  }
+  
+body {
+  background-color: white;
+  }
+  
+section {
+  background-color: rgba(229,229,229,0.8);
+  }
+  
+section {
+  margin: 2% 1%;
+  padding: 3%;
+}
+
+/* Headers */
+
+header.main, footer.main {
+  background-color: rgba(118,207,164,1);
+  padding: .5% 2%;
+  }
+  
+header.main h1, header.main p {
+  display: inline-block;
+  margin-right: 2%;
+  }
+  
+header.main h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 300%;
+  color: rgba(255,255,255,1);
+  }
+  
+header h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 200%;
+  }
+  
+header a {
+  color: inherit;
+  }
+  
+header.main p {
+  font-size: 150%;
+  }
+  
+section header {
+  border: 2px solid rgba(118,207,164,1);
+  padding: .5% 2%;
+  margin: 0;
+  left: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+  
+/* Definition Lists */
+  
+dl {
+  margin: 2% 0;
+  }
+  
+dt {
+  color: rgba(118,207,164,1);
+  padding: .5% 2%;
+  font-weight: bold;
+  }
+  
+dd {
+  padding: 0 2%;
+  }
+  
+/* Special Image */
+
+img.portrait {
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: right;
+  }
+  
+img.portrait:hover {
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
+  
+@media (max-width: 700px) {
+  img.portrait {
+    display: none;
+    }
+  }
+  
+/* Profiles */
+  
+div.social {
+float: right;
+width: 40%;
+}
+
+section.user {
+background-color:white;
+}
+
+
+div.info {
+float: left;
+width: 40%;
+}
+
+@media (max-width: 700px) {
+  div.social, div.info {
+  float: none;
+  width: 100%;
+  }
+}
+
+.user dt, .user dd {
+display: block;
+}
+
+.user dt {
+width: 25%;
+float: left;
+}
+
+.user dd {
+width: 60%;
+float: right;
+}
+
+.user dl {
+margin: 5%;
+padding: 5%;
+clear: both;
+}
+
+/* Navigation */
+
+nav {
+  display: block;
+  margin: 0 .5% 0 3%;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 1%;
+}
+
+/*  
+@media (max-width:510px) {
+  nav  needs to do something different
+  };
+*/
+
+/* Footer */
+
+footer {
+  clear: both;
+}
