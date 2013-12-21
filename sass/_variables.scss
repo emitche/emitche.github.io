@@ -6,12 +6,16 @@ $grayBlock:	solid $gray 2em;
 
 /* Breakpoints */
 
-$xsmall: 400px;
-$small: 767px;
-$tablet: 1150px;
-$medium: 1300px;
-$large: 1600px;
+$xsmall: 400px;   // 25em
+$small: 640px;    // 40em
+$tablet: 1152px;  // 72em
+$medium: 1296px;  // 81em
+$large: 1600px;   // 100em
 
-$mqtype: width;
+$xsmall: 25em;
+$small: 40em;
+$tablet: 72em;
+$medium: 81em;
+$large: 100em;
 
-// 120 80 60 30 40px
+$mqtype: device-width;
