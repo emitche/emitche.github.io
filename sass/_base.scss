@@ -8,11 +8,26 @@
       font-size: 1rem;
       }
     
-    @media (min-width:$large) {	
+    @media screen and (min-width:$large) {	
       body {
         font-size: 20px;
         font-size: 1.25em;
         font-size: 1.25rem;
+        }
+      }  
+      
+    @media screen and (max-width:$tablet) {
+        body {
+          font-size: 1.1em;
+          font-size: 1.1rem;
+        }
+      }  
+      
+    @media screen and (max-width:$small) {
+        body {
+          font-size: 20px;
+          font-size: 1.25em;
+          font-size: 1.25rem;
         }
       }  
   
