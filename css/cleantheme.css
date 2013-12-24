@@ -245,16 +245,22 @@ h1.mainHeader {
   /* line 33, ../sass/_nav.scss */
   h1.mainHeader {
     font-size: 140%;
+    margin: 0 0 2% 0;
+  }
+
+  /* line 38, ../sass/_nav.scss */
+  header.mainHeader {
+    margin: 0 0 2% 0;
   }
 }
-/* line 38, ../sass/_nav.scss */
+/* line 44, ../sass/_nav.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: 81em) {
-  /* line 44, ../sass/_nav.scss */
+  /* line 50, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -6%;
@@ -263,7 +269,7 @@ footer {
   }
 }
 @media (min-width: 100em) {
-  /* line 53, ../sass/_nav.scss */
+  /* line 59, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -18%;
@@ -272,30 +278,30 @@ footer {
   }
 }
 /* Navigation */
-/* line 63, ../sass/_nav.scss */
+/* line 69, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 68, ../sass/_nav.scss */
+/* line 74, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 73, ../sass/_nav.scss */
+/* line 79, ../sass/_nav.scss */
 nav ul li {
   margin: 0;
   padding: .5em;
 }
 
-/* line 79, ../sass/_nav.scss */
+/* line 85, ../sass/_nav.scss */
 nav.mainFooter {
   color: #42c0cf;
 }
 
 /* Main Footer */
-/* line 86, ../sass/_nav.scss */
+/* line 92, ../sass/_nav.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
@@ -314,7 +320,7 @@ footer.mainFooter {
 /* line 9, ../sass/_sections.scss */
 section {
   background-color: white;
-  padding: 0;
+  padding: 1%;
   margin: 0;
 }
 /* line 14, ../sass/_sections.scss */
@@ -329,32 +335,37 @@ section h1 {
     text-align: center;
     background-color: #656565;
     color: white;
-    padding: 1%;
-    margin: 1% 0 0 0;
+    padding: 1% 1%;
+    margin: 2% 0 0 0;
     width: 98%;
-    font-size: 1.5rem;
+    font-size: 1.25em;
+  }
+
+  /* line 32, ../sass/_sections.scss */
+  section h2 {
+    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 34, ../sass/_sections.scss */
+  /* line 38, ../sass/_sections.scss */
   section {
-    padding: 1% 0 2% 0;
+    padding: 1% 1% 2% 1%;
   }
 }
 @media screen and (min-width: 72em) {
-  /* line 41, ../sass/_sections.scss */
+  /* line 45, ../sass/_sections.scss */
   section {
     padding: 1%;
     margin: 1%;
   }
 
-  /* line 46, ../sass/_sections.scss */
+  /* line 50, ../sass/_sections.scss */
   section {
     border: solid #d0d0d0 0.125em;
     background-color: rgba(208, 208, 208, 0.25);
   }
 
-  /* line 51, ../sass/_sections.scss */
+  /* line 55, ../sass/_sections.scss */
   section.what, section.about {
     float: left;
     width: 30%;
@@ -362,7 +373,7 @@ section h1 {
     display: inline-block;
   }
 
-  /* line 58, ../sass/_sections.scss */
+  /* line 62, ../sass/_sections.scss */
   section.work {
     float: right;
     width: 60%;
@@ -371,7 +382,7 @@ section h1 {
   }
 }
 /* Tagline */
-/* line 69, ../sass/_sections.scss */
+/* line 73, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -382,28 +393,22 @@ section h1 {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 79, ../sass/_sections.scss */
+  /* line 83, ../sass/_sections.scss */
   .tagline {
-    padding: 1%;
+    padding: 3% 1%;
     font-size: 125%;
   }
 }
 /* Icons */
-/* line 87, ../sass/_sections.scss */
+/* line 91, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 90, ../sass/_sections.scss */
+/* line 94, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
 }
 
-@media screen and (max-width: 72em) {
-  /* line 96, ../sass/_sections.scss */
-  ul.icons li img {
-    height: 5rem;
-  }
-}
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
