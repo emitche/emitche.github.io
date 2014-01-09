@@ -77,7 +77,7 @@
     }
 
     .container {
-      margin: 0 auto
+      margin: 0 auto;
     }
 
     /* For tablets & smart phones */
@@ -103,16 +103,16 @@
     }
 
     /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
+    @media (min-width: 481px) and (max-width: 1199px) {
       .container {
-        width: 500px;
+        width: 60%;
       }
     }
 
     /* For larger displays */
     @media (min-width: 1200px) {
       .container {
-        width: 500px;
+        width: 80%;
       }
     }
     
@@ -123,7 +123,8 @@
 
 
   div.container {
-  margin-top: 2%;
+  padding: 1%;
+  margin: 2% 1% 1% 1%;
   }
   
   #slides .fa {
