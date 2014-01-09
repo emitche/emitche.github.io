@@ -12,12 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/cleanhouse.css">
 	<link rel="stylesheet" type="text/css" href="css/cleantheme.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slides.css">
 	<link rel="icon" type="image/png" href="images/daisy.png"> 
 </head>
 
 
 <body>
-
+  
 <!-- Header -->
 <header class="mainHeader" role="banner">
 
@@ -58,8 +60,27 @@
 <!-- Some of My Work -->
 <section class="work">
 	<h1 class="work" id="whatIveDone">Portfolio</h1>
+  
+  <div class="container">
+    <div id="slides">   
+      <img src="images/portfolio/village-mini.png" alt="Village" />
+      <img src="images/portfolio/falcon-mini.png" alt="Falcon" />
+      <img src="images/portfolio/mobile-trends.png" alt="Mobile Trends" />
+      <img src="files/samples/MAR-33-2.png" alt="Mid-American Review 33.2" />
+      <img src="images/portfolio/metro-messenger-may11.png" alt="Newsletter" />
+      <img src="images/portfolio/metro-mini.png" alt="Metro UMC" />
+      <img src="files/samples/MAR-33-1.png" alt="Mid-American Review 33.1" />
+      <img src="images/portfolio/issue-mini.png" alt="Issue Log Project" />
+      <img src="images/portfolio/music-mini.png" alt="Music" />
+      <img src="images/portfolio/WinterWheat.png" alt="Winter Wheat" />
+      <img src="images/portfolio/metro-brochure-mini.png" alt="Metro UMC Brochure" />
+      
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-arrow-circle-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-arrow-circle-right icon-large"></i></a>
+    </div>
+  </div>
 
-	<dl class="samples">
+	<dl class="samples">  
   
     <h2>Websites and Apps</h2>
     
@@ -77,6 +98,7 @@
         <dd>Site: <a href="samples/bronte/index.html">The Village of Villette</a></dd>
         <dd>Tools Used: HTML, CSS, Bootstrap</dd>
         <dd>Summary: One of the projects I worked on and built upon while a student in Build a Dynamic Website at Grand Circus was a community site to celebrate and discuss the work of an author.</dd>
+        <dd></dd>
       </dl>
       
       <dl>
@@ -86,11 +108,20 @@
         <dd>Tools Used: HTML, CSS</dd>
         <dd>Summary: One of the projects I worked on in Build a Dynamic Website.</dd>
       </dl>
+           
+      <dl>
+        <dt>Company Site Redesign</dt>
+        <dd>What: Image to HTML/CSS</dd>
+        <dd>Tools Used: CSS3, HTML5</dd>
+        <dd>For Who: Sandbender Software</dd>
+        <dd>Summary: Using the designer's files, converted image files to HTML and CSS.</dd>
+      </dl>
       
       <dl>
         <dt>Application Redesign, Front-End</dt>
         <dd>What: User Interface, Responsive Design</dd>
-        <dd>Tools Used: CSS, HTML</dd>
+        <dd>Tools Used: CSS3, HTML5</dd>
+        <dd>Who: </dd>
         <dd>Summary: Updated visual interface and theme for a pre-existing application. Worked one-on-one with back-end developer to improve user experience. Streamlined front-end of application.</dd>
       </dl>
       
@@ -114,7 +145,7 @@
       
     <h2>Print Design</h2>
     
-    <p>Though I have much experience in print design, writing, and editing, I am not currently taking on new projects. Here is some of the work I have done in the past.</p>
+    <!--<p>Though I have much experience in print design, writing, and editing, I am not currently taking on new projects. Here is some of the work I have done in the past.</p>-->
     
       <dl>
         <dt>White Paper</dt>
@@ -147,6 +178,7 @@
 	
 	<h1 class="about" id="whoIAm">About</h1>
 	
+    <p>I grew up in Detroit, MI. I graduated from Williams College in Massachusetts with a BA in American Studies. In my free time I write poetry and support youth development nonprofits.
 		<h2>Where You Can Find Me:</h2>
 			<ul class="icons">
 				<li><a href="http://www.linkedin.com/in/elizabethjmitchell" title="LinkedIn Page"><img src="images/LinkedIn.png" alt="LinkedIn icon" /></a></li>
@@ -172,5 +204,18 @@
 		</nav>
 	</footer>
 
+ 
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 500,
+        height: 300,
+        navigation: false
+      });
+    });
+  </script>
+  
 </body>
 </html>
