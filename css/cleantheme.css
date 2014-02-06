@@ -130,17 +130,8 @@ body {
     margin: 0 10%;
   }
 }
-/* Content div for fixed header */
-/*
-    div.content {
-      position: relative;
-      top: 100px;
-      padding: 0 0 0 0;
-      margin: 1% 1% 1% 1%;
-      }
-*/
 @media (min-width: 40em) {
-  /* line 77, ../sass/_base.scss */
+  /* line 66, ../sass/_base.scss */
   div.content {
     padding: 2%;
     margin: 0;
@@ -149,7 +140,7 @@ body {
   }
 }
 @media (max-width: 40em) {
-  /* line 86, ../sass/_base.scss */
+  /* line 75, ../sass/_base.scss */
   div.content {
     width: 97%;
     padding: 1%;
