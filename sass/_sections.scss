@@ -48,23 +48,19 @@
       }
       
       section {
-        border: solid $gray2 .125em;
-        background-color: $pale;
+        background-color: $white;
       }
       
-      section.what, section.about {
+      section.what, section.work {
         float: left;
-        width: 30%;
+        width: 45%;
         position: relative;
         display: inline-block;
       }
-      
-      section.work {
-        float: right;
-        width: 60%;
-        position: relative;
-        display: inline-block;
-      }
+			
+			section.about {
+				clear: both;
+			}
       
     }
       		
@@ -86,7 +82,7 @@
       }
     }
       
-  /* Icons */
+  /* Social Media Icons */
   
     ul.icons li {
       display: inline;
@@ -95,3 +91,26 @@
         height: 3rem;
       }
     }	
+		
+	/* 	Profile Image */
+	
+		#profile {
+		width: 150px;
+		float: left;
+		padding: .5% 1% .5% .25%;
+		}
+		
+		@media screen and (max-width:$small) {
+		
+			#profile {
+			padding: 2%;
+			}
+		}
+		
+		@media screen and (max-width:$xsmall) {
+		
+			#profile {
+			width: 50%;
+			float: none;
+			}
+		}

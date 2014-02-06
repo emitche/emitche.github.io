@@ -43,7 +43,7 @@
 			width: 100%;
 			background-color: $white;
       padding: 0;
-      margin: 0;
+      margin: 0 2%;
 			}
 				
 		/* Settings for breakpoints */
@@ -60,18 +60,7 @@
 					width: 80%;
           margin: 0 10%;
 					}
-				}
-    
-    /* Content div for fixed header */
-    
-/*
-    div.content {
-      position: relative;
-      top: 100px;
-      padding: 0 0 0 0;
-      margin: 1% 1% 1% 1%;
-      }
-*/
+				}  
 
     @media (min-width: $small) {
       div.content {
@@ -81,3 +70,10 @@
         display: block;
       }
     }
+		
+		@media (max-width: $small) {
+			div.content {
+				width: 97%;
+				padding: 1%;
+				}
+		}

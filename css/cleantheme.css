@@ -112,7 +112,7 @@ body {
   width: 100%;
   background-color: white;
   padding: 0;
-  margin: 0;
+  margin: 0 2%;
 }
 
 /* Settings for breakpoints */
@@ -130,22 +130,20 @@ body {
     margin: 0 10%;
   }
 }
-/* Content div for fixed header */
-/*
-    div.content {
-      position: relative;
-      top: 100px;
-      padding: 0 0 0 0;
-      margin: 1% 1% 1% 1%;
-      }
-*/
 @media (min-width: 40em) {
-  /* line 77, ../sass/_base.scss */
+  /* line 66, ../sass/_base.scss */
   div.content {
     padding: 2%;
     margin: 0;
     background-color: inherit;
     display: block;
+  }
+}
+@media (max-width: 40em) {
+  /* line 75, ../sass/_base.scss */
+  div.content {
+    width: 97%;
+    padding: 1%;
   }
 }
 /* Font Properties */
@@ -210,7 +208,7 @@ nav a {
 
 /* line 50, ../sass/_text.scss */
 ul {
-  list-style: none;
+  list-style: circle;
 }
 
 /* Main Header, Footer, and Nav */
@@ -361,28 +359,24 @@ section h1 {
 
   /* line 50, ../sass/_sections.scss */
   section {
-    border: solid #d0d0d0 0.125em;
-    background-color: rgba(208, 208, 208, 0.25);
+    background-color: white;
   }
 
-  /* line 55, ../sass/_sections.scss */
-  section.what, section.about {
+  /* line 54, ../sass/_sections.scss */
+  section.what, section.work {
     float: left;
-    width: 30%;
+    width: 45%;
     position: relative;
     display: inline-block;
   }
 
-  /* line 62, ../sass/_sections.scss */
-  section.work {
-    float: right;
-    width: 60%;
-    position: relative;
-    display: inline-block;
+  /* line 61, ../sass/_sections.scss */
+  section.about {
+    clear: both;
   }
 }
 /* Tagline */
-/* line 73, ../sass/_sections.scss */
+/* line 69, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -393,26 +387,47 @@ section h1 {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 83, ../sass/_sections.scss */
+  /* line 79, ../sass/_sections.scss */
   .tagline {
     padding: 3% 1%;
     font-size: 125%;
   }
 }
-/* Icons */
-/* line 91, ../sass/_sections.scss */
+/* Social Media Icons */
+/* line 87, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 94, ../sass/_sections.scss */
+/* line 90, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
 }
 
+/* 	Profile Image */
+/* line 97, ../sass/_sections.scss */
+#profile {
+  width: 150px;
+  float: left;
+  padding: .5% 1% .5% .25%;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 105, ../sass/_sections.scss */
+  #profile {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 112, ../sass/_sections.scss */
+  #profile {
+    width: 50%;
+    float: none;
+  }
+}
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
-  padding: 1%;
+  padding: .5%;
 }
 
 /* line 18, ../sass/cleantheme.scss */
@@ -424,5 +439,5 @@ dt {
 /* line 23, ../sass/cleantheme.scss */
 dd {
   margin: 0;
-  padding: 0 2%;
+  padding: 0;
 }

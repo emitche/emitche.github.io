@@ -1,132 +1,139 @@
-
-
-
 /* Helper Styles */
-  
-    #slides {
-      display: none;
-    }
+/* line 4, ../sass/slides.scss */
+#slides {
+  display: none;
+}
 
-    #slides .slidesjs-navigation {
-      margin-top:3px;
-    }
+/* line 8, ../sass/slides.scss */
+#slides .slidesjs-navigation {
+  margin-top: 3px;
+}
 
-    #slides .slidesjs-previous {
-      margin-right: 5px;
-      float: left;
-    }
+/* line 12, ../sass/slides.scss */
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
 
-    #slides .slidesjs-next {
-      margin-right: 5px;
-      float: left;
-    }
+/* line 17, ../sass/slides.scss */
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
 
-    .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
-      list-style: none;
-    }
+/* line 22, ../sass/slides.scss */
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
 
-    .slidesjs-pagination li {
-      float: left;
-      margin: 0 1px;
-    }
+/* line 28, ../sass/slides.scss */
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
 
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url(images/pagination.png);
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-    }
+/* line 33, ../sass/slides.scss */
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(images/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
 
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
-    }
+/* line 45, ../sass/slides.scss */
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px;
+}
 
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
-    }
+/* line 49, ../sass/slides.scss */
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px;
+}
 
-    #slides a:link,
-    #slides a:visited {
-      color: #333;
-    }
+/* line 54, ../sass/slides.scss */
+#slides a:link,
+#slides a:visited {
+  color: #333;
+}
 
-    #slides a:hover,
-    #slides a:active {
-      color: #42c0cf;
-    }
+/* line 59, ../sass/slides.scss */
+#slides a:hover,
+#slides a:active {
+  color: #42c0cf;
+}
 
-    .navbar {
-      overflow: hidden;
-    }
+/* line 63, ../sass/slides.scss */
+.navbar {
+  overflow: hidden;
+}
 
 /* End Helper Styles */
-
-
-
 /* Required Styles */
-
+/* line 73, ../sass/slides.scss */
 #slides {
-      display: none
-    }
+  display: none;
+}
 
-    .container {
-      margin: 0 auto;
-    }
+/* line 77, ../sass/slides.scss */
+.container {
+  margin: 0 auto;
+}
 
-    /* For tablets & smart phones */
-    @media (max-width: 767px) {
-      body {
-        padding-left: 2px;
-        padding-right: 2px;
-      }
-      .container {
-        width: auto
-      }
-    }
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  /* line 83, ../sass/slides.scss */
+  body {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 
-    /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-      
-      #slides .fa {
-      font-size: 300%;
-      }
-    }
+  /* line 87, ../sass/slides.scss */
+  .container {
+    width: auto;
+  }
+}
+/* For smartphones */
+@media (max-width: 480px) {
+  /* line 94, ../sass/slides.scss */
+  .container {
+    width: auto;
+  }
 
-    /* For smaller displays like laptops */
-    @media (min-width: 481px) and (max-width: 1199px) {
-      .container {
-        width: 60%;
-      }
-    }
-
-    /* For larger displays */
-    @media (min-width: 1200px) {
-      .container {
-        width: 80%;
-      }
-    }
-    
+  /* line 98, ../sass/slides.scss */
+  #slides .fa {
+    font-size: 300%;
+  }
+}
+/* For smaller displays like laptops */
+@media (min-width: 481px) and (max-width: 1199px) {
+  /* line 105, ../sass/slides.scss */
+  .container {
+    width: 95%;
+  }
+}
+/* For larger displays */
+@media (min-width: 1200px) {
+  /* line 112, ../sass/slides.scss */
+  .container {
+    width: 95%;
+  }
+}
 /* End of Required Styles */
-
-
 /* Specific Styles */
-
-
-  div.container {
+/* line 123, ../sass/slides.scss */
+div.container {
   padding: 1%;
   margin: 2% 1% 1% 1%;
-  }
-  
-  #slides .fa {
+}
+
+/* line 128, ../sass/slides.scss */
+#slides .fa {
   font-size: 200%;
-  }
+}
