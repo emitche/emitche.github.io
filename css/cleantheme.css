@@ -208,7 +208,7 @@ nav a {
 
 /* line 50, ../sass/_text.scss */
 ul {
-  list-style: none;
+  list-style: circle;
 }
 
 /* Main Header, Footer, and Nav */
