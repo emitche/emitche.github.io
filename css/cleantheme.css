@@ -403,7 +403,7 @@ ul.icons li img {
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
-  padding: 1%;
+  padding: .5%;
 }
 
 /* line 18, ../sass/cleantheme.scss */
@@ -415,5 +415,5 @@ dt {
 /* line 23, ../sass/cleantheme.scss */
 dd {
   margin: 0;
-  padding: 0 2%;
+  padding: 0;
 }
