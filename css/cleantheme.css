@@ -94,20 +94,28 @@ body {
 @media screen and (max-width: 40em) {
   /* line 27, ../sass/_base.scss */
   body {
-    font-size: 20px;
-    font-size: 1.25em;
-    font-size: 1.25rem;
+    font-size: 100%;
+  }
+
+  /* line 31, ../sass/_base.scss */
+  h1 {
+    font-size: 125%;
+  }
+
+  /* line 35, ../sass/_base.scss */
+  h2, h3 {
+    font-size: 110%;
   }
 }
 /* Body and HTML Colors and Styles */
-/* line 36, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 html {
   background-color: #d0d0d0;
   margin: 0;
   padding: 0;
 }
 
-/* line 42, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 body {
   width: 100%;
   background-color: white;
@@ -117,21 +125,21 @@ body {
 
 /* Settings for breakpoints */
 @media (min-width: 81em) {
-  /* line 52, ../sass/_base.scss */
+  /* line 59, ../sass/_base.scss */
   body {
     width: 90%;
     margin: 0 5%;
   }
 }
 @media (min-width: 100em) {
-  /* line 59, ../sass/_base.scss */
+  /* line 66, ../sass/_base.scss */
   body {
     width: 80%;
     margin: 0 10%;
   }
 }
 @media (min-width: 40em) {
-  /* line 66, ../sass/_base.scss */
+  /* line 73, ../sass/_base.scss */
   div.content {
     padding: 2%;
     margin: 0;
@@ -140,7 +148,7 @@ body {
   }
 }
 @media (max-width: 40em) {
-  /* line 75, ../sass/_base.scss */
+  /* line 82, ../sass/_base.scss */
   div.content {
     width: 97%;
     padding: 1%;
