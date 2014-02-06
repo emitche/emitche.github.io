@@ -112,7 +112,7 @@ body {
   width: 100%;
   background-color: white;
   padding: 0;
-  margin: 0;
+  margin: 0 2%;
 }
 
 /* Settings for breakpoints */
@@ -146,6 +146,13 @@ body {
     margin: 0;
     background-color: inherit;
     display: block;
+  }
+}
+@media (max-width: 40em) {
+  /* line 86, ../sass/_base.scss */
+  div.content {
+    width: 97%;
+    padding: 1%;
   }
 }
 /* Font Properties */
