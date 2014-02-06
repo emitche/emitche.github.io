@@ -1,40 +1,40 @@
 /* Helper Styles */
-/* line 6, ../sass/slides.scss */
+/* line 4, ../sass/slides.scss */
 #slides {
   display: none;
 }
 
-/* line 10, ../sass/slides.scss */
+/* line 8, ../sass/slides.scss */
 #slides .slidesjs-navigation {
   margin-top: 3px;
 }
 
-/* line 14, ../sass/slides.scss */
+/* line 12, ../sass/slides.scss */
 #slides .slidesjs-previous {
   margin-right: 5px;
   float: left;
 }
 
-/* line 19, ../sass/slides.scss */
+/* line 17, ../sass/slides.scss */
 #slides .slidesjs-next {
   margin-right: 5px;
   float: left;
 }
 
-/* line 24, ../sass/slides.scss */
+/* line 22, ../sass/slides.scss */
 .slidesjs-pagination {
   margin: 6px 0 0;
   float: right;
   list-style: none;
 }
 
-/* line 30, ../sass/slides.scss */
+/* line 28, ../sass/slides.scss */
 .slidesjs-pagination li {
   float: left;
   margin: 0 1px;
 }
 
-/* line 35, ../sass/slides.scss */
+/* line 33, ../sass/slides.scss */
 .slidesjs-pagination li a {
   display: block;
   width: 13px;
@@ -46,94 +46,94 @@
   overflow: hidden;
 }
 
-/* line 47, ../sass/slides.scss */
+/* line 45, ../sass/slides.scss */
 .slidesjs-pagination li a.active,
 .slidesjs-pagination li a:hover.active {
   background-position: 0 -13px;
 }
 
-/* line 51, ../sass/slides.scss */
+/* line 49, ../sass/slides.scss */
 .slidesjs-pagination li a:hover {
   background-position: 0 -26px;
 }
 
-/* line 56, ../sass/slides.scss */
+/* line 54, ../sass/slides.scss */
 #slides a:link,
 #slides a:visited {
   color: #333;
 }
 
-/* line 61, ../sass/slides.scss */
+/* line 59, ../sass/slides.scss */
 #slides a:hover,
 #slides a:active {
   color: #42c0cf;
 }
 
-/* line 65, ../sass/slides.scss */
+/* line 63, ../sass/slides.scss */
 .navbar {
   overflow: hidden;
 }
 
 /* End Helper Styles */
 /* Required Styles */
-/* line 75, ../sass/slides.scss */
+/* line 73, ../sass/slides.scss */
 #slides {
   display: none;
 }
 
-/* line 79, ../sass/slides.scss */
+/* line 77, ../sass/slides.scss */
 .container {
   margin: 0 auto;
 }
 
 /* For tablets & smart phones */
 @media (max-width: 767px) {
-  /* line 85, ../sass/slides.scss */
+  /* line 83, ../sass/slides.scss */
   body {
     padding-left: 2px;
     padding-right: 2px;
   }
 
-  /* line 89, ../sass/slides.scss */
+  /* line 87, ../sass/slides.scss */
   .container {
     width: auto;
   }
 }
 /* For smartphones */
 @media (max-width: 480px) {
-  /* line 96, ../sass/slides.scss */
+  /* line 94, ../sass/slides.scss */
   .container {
     width: auto;
   }
 
-  /* line 100, ../sass/slides.scss */
+  /* line 98, ../sass/slides.scss */
   #slides .fa {
     font-size: 300%;
   }
 }
 /* For smaller displays like laptops */
 @media (min-width: 481px) and (max-width: 1199px) {
-  /* line 107, ../sass/slides.scss */
+  /* line 105, ../sass/slides.scss */
   .container {
-    width: 60%;
+    width: 95%;
   }
 }
 /* For larger displays */
 @media (min-width: 1200px) {
-  /* line 114, ../sass/slides.scss */
+  /* line 112, ../sass/slides.scss */
   .container {
-    width: 80%;
+    width: 95%;
   }
 }
 /* End of Required Styles */
 /* Specific Styles */
-/* line 125, ../sass/slides.scss */
+/* line 123, ../sass/slides.scss */
 div.container {
   padding: 1%;
   margin: 2% 1% 1% 1%;
 }
 
-/* line 130, ../sass/slides.scss */
+/* line 128, ../sass/slides.scss */
 #slides .fa {
   font-size: 200%;
 }

@@ -1,6 +1,4 @@
 
-
-
 /* Helper Styles */
   
     #slides {
@@ -105,14 +103,14 @@
     /* For smaller displays like laptops */
     @media (min-width: 481px) and (max-width: 1199px) {
       .container {
-        width: 60%;
+        width: 95%;
       }
     }
 
     /* For larger displays */
     @media (min-width: 1200px) {
       .container {
-        width: 80%;
+        width: 95%;
       }
     }
     
