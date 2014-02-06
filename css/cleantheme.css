@@ -398,6 +398,14 @@ ul.icons li img {
   height: 3rem;
 }
 
+/* 	Profile Image */
+/* line 93, ../sass/_sections.scss */
+#profile {
+  width: 150px;
+  float: left;
+  padding: .5% 1% .25% .25%;
+}
+
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
