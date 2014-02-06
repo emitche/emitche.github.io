@@ -369,9 +369,14 @@ section h1 {
     position: relative;
     display: inline-block;
   }
+
+  /* line 61, ../sass/_sections.scss */
+  section.about {
+    clear: both;
+  }
 }
 /* Tagline */
-/* line 65, ../sass/_sections.scss */
+/* line 69, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -382,24 +387,24 @@ section h1 {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 75, ../sass/_sections.scss */
+  /* line 79, ../sass/_sections.scss */
   .tagline {
     padding: 3% 1%;
     font-size: 125%;
   }
 }
 /* Social Media Icons */
-/* line 83, ../sass/_sections.scss */
+/* line 87, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 86, ../sass/_sections.scss */
+/* line 90, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
 }
 
 /* 	Profile Image */
-/* line 93, ../sass/_sections.scss */
+/* line 97, ../sass/_sections.scss */
 #profile {
   width: 150px;
   float: left;
