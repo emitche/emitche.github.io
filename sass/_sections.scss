@@ -97,5 +97,20 @@
 		#profile {
 		width: 150px;
 		float: left;
-		padding: .5% 1% .25% .25%;
+		padding: .5% 1% .5% .25%;
+		}
+		
+		@media screen and (max-width:$small) {
+		
+			#profile {
+			padding: 2%;
+			}
+		}
+		
+		@media screen and (max-width:$xsmall) {
+		
+			#profile {
+			width: 50%;
+			float: none;
+			}
 		}

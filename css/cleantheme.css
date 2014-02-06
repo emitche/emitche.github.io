@@ -408,9 +408,22 @@ ul.icons li img {
 #profile {
   width: 150px;
   float: left;
-  padding: .5% 1% .25% .25%;
+  padding: .5% 1% .5% .25%;
 }
 
+@media screen and (max-width: 40em) {
+  /* line 105, ../sass/_sections.scss */
+  #profile {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 112, ../sass/_sections.scss */
+  #profile {
+    width: 50%;
+    float: none;
+  }
+}
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
