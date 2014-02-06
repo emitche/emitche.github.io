@@ -364,24 +364,16 @@ section h1 {
     background-color: white;
   }
 
-  /* line 55, ../sass/_sections.scss */
-  section.what, section.about {
+  /* line 54, ../sass/_sections.scss */
+  section.what, section.work {
     float: left;
-    width: 30%;
-    position: relative;
-    display: inline-block;
-  }
-
-  /* line 62, ../sass/_sections.scss */
-  section.work {
-    float: right;
-    width: 60%;
+    width: 45%;
     position: relative;
     display: inline-block;
   }
 }
 /* Tagline */
-/* line 73, ../sass/_sections.scss */
+/* line 65, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -392,18 +384,18 @@ section h1 {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 83, ../sass/_sections.scss */
+  /* line 75, ../sass/_sections.scss */
   .tagline {
     padding: 3% 1%;
     font-size: 125%;
   }
 }
 /* Icons */
-/* line 91, ../sass/_sections.scss */
+/* line 83, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 94, ../sass/_sections.scss */
+/* line 86, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
 }

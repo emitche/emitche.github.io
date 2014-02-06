@@ -48,20 +48,12 @@
       }
       
       section {
-    //  border: solid $gray2 .125em;
         background-color: $white;
       }
       
-      section.what, section.about {
+      section.what, section.work {
         float: left;
-        width: 30%;
-        position: relative;
-        display: inline-block;
-      }
-      
-      section.work {
-        float: right;
-        width: 60%;
+        width: 45%;
         position: relative;
         display: inline-block;
       }
