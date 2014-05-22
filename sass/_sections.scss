@@ -99,6 +99,7 @@
 		width: 150px;
 		float: left;
 		padding: .5% 1% .5% .25%;
+		border-radius: 100px;
 		}
 		
 		@media screen and (max-width:$small) {
@@ -114,4 +115,18 @@
 			width: 50%;
 			float: none;
 			}
+		}
+		
+	/* 	Featured Image */
+	
+		.photo img {
+			width: 100%;
+		}
+		
+		@media screen and (max-width:$small) {
+		
+		}
+		
+		@media screen and (max-width:$xsmall) {
+		
 		}

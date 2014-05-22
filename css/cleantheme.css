@@ -423,21 +423,28 @@ ul.icons li img {
   width: 150px;
   float: left;
   padding: .5% 1% .5% .25%;
+  border-radius: 100px;
 }
 
 @media screen and (max-width: 40em) {
-  /* line 106, ../sass/_sections.scss */
+  /* line 107, ../sass/_sections.scss */
   #profile {
     padding: 2%;
   }
 }
 @media screen and (max-width: 25em) {
-  /* line 113, ../sass/_sections.scss */
+  /* line 114, ../sass/_sections.scss */
   #profile {
     width: 50%;
     float: none;
   }
 }
+/* 	Featured Image */
+/* line 122, ../sass/_sections.scss */
+.photo img {
+  width: 100%;
+}
+
 /* Definition Lists */
 /* line 14, ../sass/cleantheme.scss */
 dl {
