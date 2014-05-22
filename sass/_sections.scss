@@ -7,7 +7,7 @@
   /* Sections */
   
     section {
-      background-color: $white;
+      background-color: $pale;
       padding: 1%;
       margin: 0;
       
@@ -48,7 +48,8 @@
       }
       
       section {
-        background-color: $white;
+        background-color: $pale;
+		border-radius: .5rem;
       }
       
       section.what, section.work {

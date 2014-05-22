@@ -330,7 +330,7 @@ footer.mainFooter {
 /* Sections */
 /* line 9, ../sass/_sections.scss */
 section {
-  background-color: white;
+  background-color: rgba(208, 208, 208, 0.15);
   padding: 1%;
   margin: 0;
 }
@@ -372,10 +372,11 @@ section h1 {
 
   /* line 50, ../sass/_sections.scss */
   section {
-    background-color: white;
+    background-color: rgba(208, 208, 208, 0.15);
+    border-radius: .5rem;
   }
 
-  /* line 54, ../sass/_sections.scss */
+  /* line 55, ../sass/_sections.scss */
   section.what, section.work {
     float: left;
     width: 45%;
@@ -383,13 +384,13 @@ section h1 {
     display: inline-block;
   }
 
-  /* line 61, ../sass/_sections.scss */
+  /* line 62, ../sass/_sections.scss */
   section.about {
     clear: both;
   }
 }
 /* Tagline */
-/* line 69, ../sass/_sections.scss */
+/* line 70, ../sass/_sections.scss */
 .tagline {
   display: block;
   color: #42c0cf;
@@ -400,24 +401,24 @@ section h1 {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 79, ../sass/_sections.scss */
+  /* line 80, ../sass/_sections.scss */
   .tagline {
     padding: 3% 1%;
     font-size: 125%;
   }
 }
 /* Social Media Icons */
-/* line 87, ../sass/_sections.scss */
+/* line 88, ../sass/_sections.scss */
 ul.icons li {
   display: inline;
 }
-/* line 90, ../sass/_sections.scss */
+/* line 91, ../sass/_sections.scss */
 ul.icons li img {
   height: 3rem;
 }
 
 /* 	Profile Image */
-/* line 97, ../sass/_sections.scss */
+/* line 98, ../sass/_sections.scss */
 #profile {
   width: 150px;
   float: left;
@@ -425,13 +426,13 @@ ul.icons li img {
 }
 
 @media screen and (max-width: 40em) {
-  /* line 105, ../sass/_sections.scss */
+  /* line 106, ../sass/_sections.scss */
   #profile {
     padding: 2%;
   }
 }
 @media screen and (max-width: 25em) {
-  /* line 112, ../sass/_sections.scss */
+  /* line 113, ../sass/_sections.scss */
   #profile {
     width: 50%;
     float: none;
