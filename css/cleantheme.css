@@ -448,12 +448,11 @@ ul.icons li img {
 @media screen and (max-width: 25em) {
   /* line 114, ../sass/_sections.scss */
   #profile {
-    width: 50%;
-    float: none;
+    width: 25%;
   }
 }
 /* 	Featured Image */
-/* line 122, ../sass/_sections.scss */
+/* line 121, ../sass/_sections.scss */
 .photo img {
   width: 100%;
 }
