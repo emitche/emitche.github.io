@@ -24,15 +24,22 @@
 		nav a {
 			text-decoration: none;
 			font-weight: bold;
+			text-transform: uppercase;
 			}	
 		
 		.mainHeader nav a{
-			color: $gray;
+			color: $white;
+			padding: 1%;
 			
 			&:hover {
-				color: $white;
+				background-color: $pale2;
+				color: $gray;
+				border-radius: .25em;
+				
+				/*
 				transition: color 1s ease-in;
 				@include transition(color 1s ease-in);
+				*/
 				}		
 			}
 			

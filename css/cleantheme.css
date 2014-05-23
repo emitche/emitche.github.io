@@ -189,27 +189,30 @@ h1 > a {
 nav a {
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* line 29, ../sass/_text.scss */
+/* line 30, ../sass/_text.scss */
 .mainHeader nav a {
-  color: #656565;
-}
-/* line 32, ../sass/_text.scss */
-.mainHeader nav a:hover {
   color: white;
+  padding: 1%;
+}
+/* line 34, ../sass/_text.scss */
+.mainHeader nav a:hover {
+  background-color: #ebebe6;
+  color: #656565;
+  border-radius: .25em;
+  /*
   transition: color 1s ease-in;
-  -webkit-transition: color 1s ease-in;
-  -moz-transition: color 1s ease-in;
-  -o-transition: color 1s ease-in;
-  transition: color 1s ease-in;
+  @include transition(color 1s ease-in);
+  */
 }
 
-/* line 39, ../sass/_text.scss */
+/* line 46, ../sass/_text.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 42, ../sass/_text.scss */
+/* line 49, ../sass/_text.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -219,7 +222,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 50, ../sass/_text.scss */
+/* line 57, ../sass/_text.scss */
 ul {
   list-style: circle;
 }
@@ -263,15 +266,20 @@ h1.mainHeader {
   header.mainHeader {
     margin: 0 0 2% 0;
   }
+
+  /* line 42, ../sass/_nav.scss */
+  .mainHeader nav ul li {
+    display: block;
+  }
 }
-/* line 44, ../sass/_nav.scss */
+/* line 48, ../sass/_nav.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: 81em) {
-  /* line 50, ../sass/_nav.scss */
+  /* line 54, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -6%;
@@ -280,7 +288,7 @@ footer {
   }
 }
 @media (min-width: 100em) {
-  /* line 59, ../sass/_nav.scss */
+  /* line 63, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -18%;
@@ -289,30 +297,35 @@ footer {
   }
 }
 /* Navigation */
-/* line 69, ../sass/_nav.scss */
+/* line 73, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 74, ../sass/_nav.scss */
+/* line 78, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 79, ../sass/_nav.scss */
+/* line 83, ../sass/_nav.scss */
 nav ul li {
-  margin: 0;
   padding: .5em;
 }
 
-/* line 85, ../sass/_nav.scss */
-nav.mainFooter {
-  color: #42c0cf;
+/* line 88, ../sass/_nav.scss */
+.mainHeader nav {
+  margin-bottom: 1em;
 }
 
+	/*
+    .mainFooter nav {
+      color: $blue;
+	  text-transform: none;
+    }
+	*/
 /* Main Footer */
-/* line 92, ../sass/_nav.scss */
+/* line 102, ../sass/_nav.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
