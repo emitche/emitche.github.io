@@ -11,14 +11,14 @@
 				background-color: $blue;
 				color: $white;
 				text-align: center;
-        padding: .125% 0;
+				padding: .125% 0;
 				
-        h1, h2, h3, h4, h5, h6 {
+				h1, h2, h3, h4, h5, h6 {
 					color: inherit;
 				}
         
 				ul li {
-          display: inline;
+					display: inline;
 				}
           
 			}
@@ -32,7 +32,7 @@
 
 				h1.mainHeader {
 					font-size: 140%;
-          margin: 0 0 2% 0;
+					margin: 0 0 2% 0;
 				}
         
         header.mainHeader {
@@ -77,14 +77,20 @@
         }
         
       ul li {
-          margin: 0;
           padding: .5em;
           }
     }
-    
-    nav.mainFooter {
+	
+	.mainHeader nav {
+		margin-bottom: 1em;
+	}
+   
+	/*
+    .mainFooter nav {
       color: $blue;
+	  text-transform: none;
     }
+	*/
         
     
   /* Main Footer */

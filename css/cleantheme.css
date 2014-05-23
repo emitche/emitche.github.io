@@ -189,27 +189,30 @@ h1 > a {
 nav a {
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* line 29, ../sass/_text.scss */
+/* line 30, ../sass/_text.scss */
 .mainHeader nav a {
-  color: #656565;
-}
-/* line 32, ../sass/_text.scss */
-.mainHeader nav a:hover {
   color: white;
+  padding: 1%;
+}
+/* line 34, ../sass/_text.scss */
+.mainHeader nav a:hover {
+  background-color: #ebebe6;
+  color: #656565;
+  border-radius: 1em;
+  /*
   transition: color 1s ease-in;
-  -webkit-transition: color 1s ease-in;
-  -moz-transition: color 1s ease-in;
-  -o-transition: color 1s ease-in;
-  transition: color 1s ease-in;
+  @include transition(color 1s ease-in);
+  */
 }
 
-/* line 39, ../sass/_text.scss */
+/* line 46, ../sass/_text.scss */
 .mainFooter nav a {
   color: white;
 }
-/* line 42, ../sass/_text.scss */
+/* line 49, ../sass/_text.scss */
 .mainFooter nav a:hover {
   color: #25a4b3;
   transition: color 1s ease-in;
@@ -219,7 +222,7 @@ nav a {
   transition: color 1s ease-in;
 }
 
-/* line 50, ../sass/_text.scss */
+/* line 57, ../sass/_text.scss */
 ul {
   list-style: circle;
 }
@@ -302,17 +305,22 @@ nav ul {
 }
 /* line 79, ../sass/_nav.scss */
 nav ul li {
-  margin: 0;
   padding: .5em;
 }
 
-/* line 85, ../sass/_nav.scss */
-nav.mainFooter {
-  color: #42c0cf;
+/* line 84, ../sass/_nav.scss */
+.mainHeader nav {
+  margin-bottom: 1em;
 }
 
+	/*
+    .mainFooter nav {
+      color: $blue;
+	  text-transform: none;
+    }
+	*/
 /* Main Footer */
-/* line 92, ../sass/_nav.scss */
+/* line 98, ../sass/_nav.scss */
 footer.mainFooter {
   background: #656565;
   color: white;
