@@ -201,7 +201,7 @@ nav a {
 .mainHeader nav a:hover {
   background-color: #ebebe6;
   color: #656565;
-  border-radius: 1em;
+  border-radius: .25em;
   /*
   transition: color 1s ease-in;
   @include transition(color 1s ease-in);
@@ -266,15 +266,20 @@ h1.mainHeader {
   header.mainHeader {
     margin: 0 0 2% 0;
   }
+
+  /* line 42, ../sass/_nav.scss */
+  .mainHeader nav ul li {
+    display: block;
+  }
 }
-/* line 44, ../sass/_nav.scss */
+/* line 48, ../sass/_nav.scss */
 footer {
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: 81em) {
-  /* line 50, ../sass/_nav.scss */
+  /* line 54, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -6%;
@@ -283,7 +288,7 @@ footer {
   }
 }
 @media (min-width: 100em) {
-  /* line 59, ../sass/_nav.scss */
+  /* line 63, ../sass/_nav.scss */
   header.mainHeader {
     position: relative;
     left: -18%;
@@ -292,23 +297,23 @@ footer {
   }
 }
 /* Navigation */
-/* line 69, ../sass/_nav.scss */
+/* line 73, ../sass/_nav.scss */
 nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 74, ../sass/_nav.scss */
+/* line 78, ../sass/_nav.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 79, ../sass/_nav.scss */
+/* line 83, ../sass/_nav.scss */
 nav ul li {
   padding: .5em;
 }
 
-/* line 84, ../sass/_nav.scss */
+/* line 88, ../sass/_nav.scss */
 .mainHeader nav {
   margin-bottom: 1em;
 }
@@ -320,7 +325,7 @@ nav ul li {
     }
 	*/
 /* Main Footer */
-/* line 98, ../sass/_nav.scss */
+/* line 102, ../sass/_nav.scss */
 footer.mainFooter {
   background: #656565;
   color: white;

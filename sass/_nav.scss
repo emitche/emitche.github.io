@@ -35,9 +35,13 @@
 					margin: 0 0 2% 0;
 				}
         
-        header.mainHeader {
-          margin: 0 0 2% 0;
-        }
+				header.mainHeader {
+				  margin: 0 0 2% 0;
+				}
+				
+				.mainHeader nav ul li {
+					display: block;
+				}
         
 			}
 
