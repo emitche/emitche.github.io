@@ -176,12 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 15, ../sass/_text.scss */
 a {
-  text-decoration: none;
   color: #25a4b3;
 }
 
 /* line 20, ../sass/_text.scss */
 h1 > a {
+  text-decoration: none;
   color: inherit;
 }
 

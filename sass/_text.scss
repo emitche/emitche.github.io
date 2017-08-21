@@ -11,51 +11,49 @@
 		h1, h2, h3, h4, h5, h6 {
 			text-transform: uppercase;
 			font-weight: bold;}
-		
+
 		a {
-			text-decoration: none;
 			color: $darkblue;
 			}
-		
+
 		h1 > a {
+			text-decoration: none;
 			color: inherit;
 			}
-			
+
 		nav a {
 			text-decoration: none;
 			font-weight: bold;
 			text-transform: uppercase;
-			}	
-		
-		.mainHeader nav a{
+			}
+
+		.mainHeader nav a {
 			color: $white;
 			padding: 1%;
-			
+
 			&:hover {
 				background-color: $pale2;
 				color: $gray;
 				border-radius: .25em;
-				
+
 				/*
 				transition: color 1s ease-in;
 				@include transition(color 1s ease-in);
 				*/
-				}		
+				}
 			}
-			
+
 		.mainFooter nav a {
 			color: $white;
-			
+
 			&:hover {
 				color: $darkblue;
 				transition: color 1s ease-in;
 				@include transition(color 1s ease-in);
-				}		
+				}
 			}
-			
+
 		ul
 			{
 			list-style: circle;
 			}
-      
-    
