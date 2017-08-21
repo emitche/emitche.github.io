@@ -50,24 +50,6 @@
 				padding: 0;
 			}
 
-    @media (min-width:$medium) {
-     header.mainHeader {
-        position: relative;
-        left: -6%;
-        width: 112%;
-        top: 0px;
-      }
-		}
-
-    @media (min-width:$large) {
-     header.mainHeader {
-        position: relative;
-        left: -18%;
-        width: 138%;
-        top: 0px;
-      }
-		}
-
   /* Navigation */
 
     nav {
@@ -88,14 +70,6 @@
 	.mainHeader nav {
 		margin-bottom: 1em;
 	}
-
-	/*
-    .mainFooter nav {
-      color: $blue;
-	  text-transform: none;
-    }
-	*/
-
 
   /* Main Footer */
 

@@ -278,24 +278,6 @@ footer {
   padding: 0;
 }
 
-@media (min-width: 81em) {
-  /* line 54, ../sass/_nav.scss */
-  header.mainHeader {
-    position: relative;
-    left: -6%;
-    width: 112%;
-    top: 0px;
-  }
-}
-@media (min-width: 100em) {
-  /* line 63, ../sass/_nav.scss */
-  header.mainHeader {
-    position: relative;
-    left: -18%;
-    width: 138%;
-    top: 0px;
-  }
-}
 /* Navigation */
 /* line 73, ../sass/_nav.scss */
 nav {
@@ -318,12 +300,6 @@ nav ul li {
   margin-bottom: 1em;
 }
 
-	/*
-    .mainFooter nav {
-      color: $blue;
-	  text-transform: none;
-    }
-	*/
 /* Main Footer */
 /* line 102, ../sass/_nav.scss */
 footer.mainFooter {
