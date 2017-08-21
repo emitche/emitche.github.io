@@ -128,9 +128,17 @@
 /* End of Required Styles */
 /* Specific Styles */
 /* line 123, ../sass/slides.scss */
+
 div.container {
   padding: 1%;
   margin: .1% 1% 1% 1%;
+}
+
+@media screen and (min-width: 41em) {
+  div.container {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 /* line 128, ../sass/slides.scss */

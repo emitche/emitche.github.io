@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/cleanhouse.css">
 	<link rel="stylesheet" type="text/css" href="css/cleantheme.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slides.css">
 	<link rel="icon" type="image/png" href="images/daisy.png">
 </head>
 
@@ -36,7 +37,7 @@
 
 <div class="content">
 
-<h1>Front-End Web Development</h1>
+<h1>Frontend Web Development</h1>
 
 <!-- Tagline -->
 <p class="tagline">"Technology at its heart should serve and connect everyday people."</p>
@@ -65,18 +66,18 @@
 			</dl>
 
 			<dl>
-				<dt>Freelance Front-End Developer</dt>
+				<dt>Freelance Frontend Developer</dt>
 				<dd>June 2013 - Present</dd>
 			</dl>
 
 			<dl>
-				<dt>Junior Front-End Developer</dt>
+				<dt>Junior Frontend Developer</dt>
 				<dd>Nexient (formerly Systems in Motion)</dd>
 				<dd>June 2014 - February 2015</dd>
 			</dl>
 
 			<dl>
-				<dt>Front-End Developer Intern</dt>
+				<dt>Frontend Developer Intern</dt>
 				<dd>Logicdrop</dd>
 				<dd>February 2014 - April 2014</dd>
 			</dl>
@@ -140,7 +141,7 @@
 			</dl>
 
 			<dl>
-			 <dt>Modern Front-End Development</dt>
+			 <dt>Modern Frontend Development</dt>
 			 <dd>coLearning @ The Factory, Grand Rapids, MI</dd>
 			 <dd>April 30 - June 2013</dd>
 			 <dd>Topics covered: HTML5, CSS3, Responsive Design, PSD to HTML/CSS, Git</dd>
@@ -156,7 +157,28 @@
 
 <div class="content">
 <section>
-	<h1>Some of My Work</h1>
+	<h1>Portfolio</h1>
+
+	<div class="container">
+		<div id="slides">
+			<img src="images/portfolio/sassafras-about.png" alt="Sassafras About Page: An about page showing the values of an organization with alternating gray and white backgrounds for sections" />
+			<img src="images/portfolio/neil.png" alt="Neil Frankenhauser Website: An artist's webpage with a collection of watercolors include a white, tall water bird" />
+			<img src="images/portfolio/nancy.png" alt="Nancy Owen Nelson Website: A writer's webpage describing a work-in-progress with black and white photograph of a father and daughter" />
+			<img src="images/portfolio/falcon-mini.png" alt="A manufacturing website" />
+			<img src="images/portfolio/MAR-33-2-mini.png" alt="A literary magazine website" />
+			<img src="images/portfolio/metro-mini.png" alt="A website for a faith organization" />
+			<img src="images/portfolio/MAR-33-1.png" alt="A literary magazine website" />
+			<img src="images/portfolio/village-mini.png" alt="A fan community for Charlotte Bronte" />
+			<img src="images/portfolio/music-mini.png" alt="A list of musical albums" />
+
+			<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-arrow-circle-left icon-large"></i></a>
+			<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-arrow-circle-right icon-large"></i></a>
+		</div>
+	</div>
+
+	<h2>Some of My Work</h2>
+	<p>Below are some of the projects I've worked on as a freelance developer.</p>
+
 			<dl>
 				<dt><a href="https://neilfrankenhauser.wordpress.com/" target="_blank">Neil Frankenhauser</a></dt>
 				<dd>What: Web Administration, Theme Selection</dd>
@@ -177,6 +199,20 @@
 				<dd>Tools Used: HTML, CSS, WordPress, PHP, JavaScript</dd>
 				<dd>Summary: Created a website for a writer, including building a custom theme</dd>
 			</dl>
+
+			<dl>
+        <dt>Company Site Redesign</dt>
+        <dd>What: Frontend Development</dd>
+        <dd>Tools Used: CSS3, HTML5</dd>
+				<dd>Summary: Converted image files of a design into code</dd>
+      </dl>
+
+      <dl>
+        <dt>Application Redesign/Frontend</dt>
+        <dd>What: User Interface, Responsive Design</dd>
+        <dd>Tools Used: CSS3, HTML5</dd>
+				<dd>Summary: Styled an existing internal/intranet application</dd>
+      </dl>
 </section>
 
 </div>
@@ -196,6 +232,18 @@
 		</nav>
 
 	</footer>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+		$(function() {
+			$('#slides').slidesjs({
+				width: 500,
+				height: 245,
+				navigation: false
+			});
+		});
+	</script>
 
 </body>
 </html>
