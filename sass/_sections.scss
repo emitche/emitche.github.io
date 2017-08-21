@@ -2,15 +2,15 @@
 		SECTIONS
 		----------------------
 	*/
-      
+
 
   /* Sections */
-  
+
     section {
       background-color: $pale;
       padding: 1%;
       margin: 0;
-      
+
       h1 {
         color: $darkblue;
         font-size: 2rem;
@@ -18,7 +18,7 @@
     }
 
     @media screen and (max-width:$small) {
-        
+
       section h1  {
         text-align: center;
         background-color: $gray;
@@ -28,45 +28,63 @@
         width: 98%;
         font-size: 1.25em;
       }
-      
+
       section h2 {
         font-size: 1.2em;
         }
     }
-    
+
     @media screen and (min-width:$small) {
       section {
         padding: 1% 1% 2% 1%;
       }
+
+      section.what {
+        h1, h2 {
+          text-transform: none;
+        }
+      }
     }
-    
+
     @media screen and (min-width:$tablet) {
-      
+
       section {
         padding: 1%;
         margin: 1%;
       }
-      
+
       section {
         background-color: $pale;
-		border-radius: .5rem;
+        border-radius: .5rem;
       }
-      
-      section.what, section.work {
+
+      .content {
+        .home {
+          text-align: center;
+        }
+      }
+
+      section.what {
+        display: inline-block;
+        width: 45%;
+        margin: 0 auto;
+      }
+
+      section.work {
         float: left;
         width: 45%;
         position: relative;
         display: inline-block;
       }
-			
+
 			section.about {
 				clear: both;
 			}
-      
+
     }
-      		
+
 	/* Tagline */
-		
+
     .tagline {
       display: block;
       color: $blue;
@@ -74,58 +92,58 @@
       margin: 0;
       padding: 1%;
       text-align: center;
-    }      
-    
+    }
+
     @media screen and (max-width:$small) {
       .tagline {
         padding: 3% 1%;
         font-size: 125%;
       }
     }
-      
+
   /* Social Media Icons */
-  
+
     ul.icons li {
       display: inline;
-      
+
       img {
         height: 3rem;
       }
-    }	
-		
+    }
+
 	/* 	Profile Image */
-	
+
 		#profile {
 		width: 150px;
 		float: left;
 		padding: .5% 1% .5% .25%;
 		border-radius: 100px;
 		}
-		
+
 		@media screen and (max-width:$small) {
-		
+
 			#profile {
 			padding: 2%;
 			}
 		}
-		
+
 		@media screen and (max-width:$xsmall) {
-		
+
 			#profile {
 			width: 25%;
 			}
 		}
-		
+
 	/* 	Featured Image */
-	
+
 		.photo img {
 			width: 100%;
 		}
-		
+
 		@media screen and (max-width:$small) {
-		
+
 		}
-		
+
 		@media screen and (max-width:$xsmall) {
-		
+
 		}

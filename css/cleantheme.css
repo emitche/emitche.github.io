@@ -351,6 +351,10 @@ section h1 {
   section {
     padding: 1% 1% 2% 1%;
   }
+
+  section.what h1, section.what h2 {
+    text-transform: none;
+  }
 }
 @media screen and (min-width: 72em) {
   /* line 45, ../sass/_sections.scss */
@@ -365,8 +369,18 @@ section h1 {
     border-radius: .5rem;
   }
 
+  .content.home {
+    text-align: center;
+  }
+
+  section.what {
+    display: inline-block;
+    width: 45%;
+    margin: 0 auto;
+  }
+
   /* line 55, ../sass/_sections.scss */
-  section.what, section.work {
+  section.work {
     float: left;
     width: 45%;
     position: relative;
