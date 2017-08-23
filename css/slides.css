@@ -129,6 +129,12 @@
 /* Specific Styles */
 /* line 123, ../sass/slides.scss */
 
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+}
+
 div.container {
   padding: 1%;
   margin: .1% 1% 1% 1%;
@@ -136,12 +142,12 @@ div.container {
 
 @media screen and (min-width: 41em) {
   div.container {
-    width: 60%;
-    margin: 0 auto;
+    width: 75%;
+    margin: 0;
   }
 }
 
 /* line 128, ../sass/slides.scss */
 #slides .fa {
-  font-size: 200%;
+  font-size: 250%;
 }

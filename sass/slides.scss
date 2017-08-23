@@ -119,6 +119,11 @@
 
 /* Specific Styles */
 
+  @media (max-width: 767px) {
+    body {
+      padding: 0;
+    }
+  }
 
   div.container {
     padding: 1%;
@@ -127,11 +132,11 @@
 
   @media screen and (min-width: 41em) {
     div.container {
-      width: 60%;
-      margin: 0 auto;
+      width: 75%;
+      margin: 0;
     }
   }
 
   #slides .fa {
-    font-size: 200%;
+    font-size: 250%;
   }
