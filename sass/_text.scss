@@ -16,10 +16,20 @@
 			color: $darkblue;
 			}
 
-		h1 > a {
+		h1 > a, .home h2 > a {
 			text-decoration: none;
 			color: inherit;
+		}
+
+		.home {
+			h2 {
+				margin: 1em 0 .25em;
 			}
+
+			p {
+				margin-top: 0;
+			}
+		}
 
 		nav a {
 			text-decoration: none;
